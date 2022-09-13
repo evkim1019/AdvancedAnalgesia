@@ -1,0 +1,16 @@
+.contentDetail {
+  display: block;
+}
+.contentDetailContainer {
+  padding-bottom: 100px;
+}
+.contentDetailContainer h1 {
+  margin-bottom:30px;
+}
+.contentDetail--section-content {
+  word-break: break-word;
+}
+.contentDetail--section-content img {
+  display: block;
+  width: 100%;
+}

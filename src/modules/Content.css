@@ -1,0 +1,26 @@
+/* Content */
+.content {
+  height: calc(100vh - 140px);
+  padding: 0 20px;
+  position: relative;
+  overflow:hidden;
+}
+.content > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: auto;
+}
+.content--section {
+  margin-bottom: 20px;
+}
+.content--section h1, .content--section h2, .content--section h3 {
+  margin-bottom: 5px;
+}
+.content--section ol, .content--section ul {
+  padding-left: 20px;
+}
+.content--section li {
+  margin-bottom:5px;
+}

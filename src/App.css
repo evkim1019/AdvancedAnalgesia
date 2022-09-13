@@ -1,0 +1,103 @@
+/* GLOBAL STYLE */
+* {
+  margin: 0;
+  padding:0;
+}
+#darkModeToggle {
+  position:absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: .3;
+}
+#light {
+  background-color: #f7f7f7;
+  color: #005c73;
+}
+#dark {
+  background-color: #1f2b2f;
+  color: #efefef;
+}
+a {
+  color: inherit;
+}
+
+
+
+
+
+/* Typography */
+.smallText {
+  font-size: 11px;
+}
+
+/* Asset styles */
+.button-full, .button-full-secondary {
+  padding: 10px 0;
+  font-weight:bolder;
+  margin: 0 10px;
+  text-align:center;
+  border-radius: 4px;
+  text-decoration: none;
+  display:block;
+  width: calc(100% - 20px);
+}
+#light .button-full {
+  background-color:#005c73;
+  color: #fff;
+}
+#dark .button-full {
+  background-color:#05E6E1;
+  color: #013d4c;
+}
+.button-disabled {
+  opacity: 0.4;
+}
+.button-underlined{
+  text-decoration: underline;
+}
+
+#light .button-full-secondary {
+  border:1px solid #005c73;
+  color: #013d4c;
+}
+#dark .button-full-secondary {
+  border: 1px solid #05E6E1;
+  color: #fff;
+}
+
+.float-bottom {
+  position:fixed;
+  bottom: 85px;
+  width: calc(100vw - 100px);
+}
+
+
+
+.App {
+  min-height: 100vh;
+}
+
+
+
+
+
+
+/* Header */
+.header .logo {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  padding: 20px 20px 10px 20px;
+  text-align: left;
+  opacity: 0.4;
+  line-height: 25px;
+}
+
+
+
+
+

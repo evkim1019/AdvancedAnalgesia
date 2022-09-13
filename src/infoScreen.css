@@ -1,0 +1,34 @@
+.infoScreen {
+  display: block!important;
+}
+.infoScreen div:last-child{
+  padding-bottom: 100px;
+}
+
+
+
+/* Book ad */
+.infoScreen--book-ad {
+  width: calc(100% - 2px);
+  /* border: solid 1px #005c73; */
+  /* border-radius: 4px; */
+  overflow: hidden;
+  margin-bottom:7px;
+}
+.infoScreen--book-ad img {
+  display: block;
+  width: 100%;
+}
+.infoScreen--book-button {
+  margin-bottom: 30px!important;
+}
+
+
+
+
+
+
+
+.infoScreen--contact{
+  position:relative;
+}
