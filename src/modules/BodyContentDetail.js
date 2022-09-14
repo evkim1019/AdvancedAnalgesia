@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import { Player } from 'video-react';
+// import { Player } from 'video-react';
+import ReactPlayer from 'react-player'
+
 
 import headneckDB from '../contents/headneckDB';
 import torsoDB from '../contents/torsoDB';
@@ -94,9 +96,7 @@ function BodyContentDetail() {
           <div className="contentDetail--section-content">
             {pathContent.videos.map((video, index) => {
               return (
-                <Player muted={true} autoPlay={true}>
-                  <source src={video.url} />
-                </Player>
+                <ReactPlayer url={video.url} muted={true} playing={true} controls={true} width="100%" height="auto" />
               )
             })}
           </div>
