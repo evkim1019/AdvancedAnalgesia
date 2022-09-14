@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
+import { Player } from 'video-react';
 
 import headneckDB from '../contents/headneckDB';
 import torsoDB from '../contents/torsoDB';
@@ -85,6 +86,23 @@ function BodyContentDetail() {
       <div className="contentDetailContainer">
         <Link to={`${pathCategory}`}>Back</Link>
         <h1>{pathContent.name}</h1>
+
+
+        {/* Videos */}
+        { pathContent.videos && pathContent.videos.length >= 1 ?
+        <div className="content--section">
+          <div className="contentDetail--section-content">
+            {pathContent.videos.map((video, index) => {
+              return (
+                <Player muted={true} autoPlay={true}>
+                  <source src={video.url} />
+                </Player>
+              )
+            })}
+          </div>
+        </div>
+        :null }
+
 
         {/* Illustrations */}
         { pathContent.illustrations && pathContent.illustrations.length >= 1 ?

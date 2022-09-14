@@ -2,6 +2,7 @@ import { createContext, useState } from 'react';
 import { ReactPropTypes } from 'react';
 import PropTypes from 'prop-types';
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
+import {isMobile} from 'react-device-detect';
 
 import Content from './modules/Content';
 import MobileBottomNav from './modules/MobileBottomNav';
@@ -9,6 +10,7 @@ import MobileBottomNav from './modules/MobileBottomNav';
 import logo from './logo.svg';
 import './App.css';
 import './modules/MobileBottomNav.css'
+import NonMobile from './modules/NonMobile';
 
 
 
@@ -25,18 +27,30 @@ function App() {
     setDarkMode(!isDarkMode);
   };
 
+  // Device check
+  const [isMobile, setIsMobile] = useState(false);
+  
+
 
 
   return (
+    
     <div className="App" id={isDarkMode ? "dark" : "light"}>
       {/* Logo header */}
       <div className="header">
         <p className="logo">Advanced Analgesia</p>
       </div>
+      
 
 
       {/* Content */}
+      {/* { isMobile ? 
       <Content />
+      :
+      <NonMobile /> 
+      } */}
+      <Content />
+      
 
 
       {/* Dark mode toggle */}
@@ -50,7 +64,11 @@ function App() {
       
       
       {/* Bottom navigation */}
+      {/* {isMobile ? 
       <MobileBottomNav />
+      : null} */}
+      <MobileBottomNav />
+      
       
     </div>
     

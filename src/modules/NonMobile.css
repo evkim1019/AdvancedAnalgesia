@@ -1,0 +1,16 @@
+.nonMobile {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.nonMobile__content {
+  text-align:center;
+  padding: 30px;
+}
+.nonMobile__content img {
+  width:100%;
+  max-width: 250px;
+  display:block;
+  margin:0 auto;
+}
