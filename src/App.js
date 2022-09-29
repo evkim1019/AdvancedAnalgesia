@@ -16,6 +16,7 @@ import NonMobile from './modules/NonMobile';
 
 
 
+
 export const ThemeContext = createContext(null);
 
 function App() {
@@ -37,19 +38,21 @@ function App() {
     
     <div className="App" id={isDarkMode ? "dark" : "light"}>
       {/* Logo header */}
+      { isMobile ? 
       <div className="header">
         <p className="logo">Advanced Analgesia</p>
       </div>
+      : null }
       
 
 
       {/* Content */}
-      {/* { isMobile ? 
+      { isMobile ? 
       <Content />
       :
       <NonMobile /> 
-      } */}
-      <Content />
+      }
+      {/* <Content /> */}
       
 
 
@@ -67,7 +70,7 @@ function App() {
       {/* {isMobile ? 
       <MobileBottomNav />
       : null} */}
-      <MobileBottomNav />
+      {/* <MobileBottomNav /> */}
       
       
     </div>

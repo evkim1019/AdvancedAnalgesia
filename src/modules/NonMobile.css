@@ -3,14 +3,16 @@
   justify-content: center;
   align-items: center;
   height: 75vh;
+  min-height: 100vh;
 }
 .nonMobile__content {
   text-align:center;
   padding: 30px;
 }
-.nonMobile__content img {
-  width:100%;
-  max-width: 250px;
+.nonMobile__content-qr{
+  width:70%;
+  min-width:100px;
+  max-width: 200px;
   display:block;
   margin:0 auto;
 }
