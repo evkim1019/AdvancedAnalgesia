@@ -28,10 +28,9 @@ function BodyContentList(props) {
         {headneckDB.map(el => {
           return (
             <Link to={`/headneck/${el.url}`} params={el} className="bodyContentList--item" key={el.name}>
-              <div className="bodyContentList--item-illustration">
-                {/* {el.illustration} */}
-                <SelectedHead />
-              </div>
+              {/* <div className="bodyContentList--item-illustration">
+                {el.illustration ? <img src={`${el.illustration}`} alt={el.name} /> : <SelectedHead />}
+              </div> */}
               <div className="bodyContentList--item-text">
                 {el.name}<KeyboardArrowRightRoundedIcon />
               </div>
@@ -48,9 +47,9 @@ function BodyContentList(props) {
         {torsoDB.map(el => {
           return (
             <Link to={`/torso/${el.url}`} params={el} className="bodyContentList--item" key={el.name}>
-              <div className="bodyContentList--item-illustration">
+              {/* <div className="bodyContentList--item-illustration">
                 <SelectedTorso />
-              </div>
+              </div> */}
               <div className="bodyContentList--item-text">
                 {el.name}<KeyboardArrowRightRoundedIcon />
               </div>
@@ -67,10 +66,9 @@ function BodyContentList(props) {
         {upperExtDB.map(el => {
           return (
             <Link to={`/upperextremities/${el.url}`} params={el} className="bodyContentList--item" key={el.name}>
-              <div className="bodyContentList--item-illustration">
-                {/* {el.illustration} */}
+              {/* <div className="bodyContentList--item-illustration">
                 <SelectedHead />
-              </div>
+              </div> */}
               <div className="bodyContentList--item-text">
                 {el.name}<KeyboardArrowRightRoundedIcon />
               </div>
@@ -87,10 +85,9 @@ function BodyContentList(props) {
         {lowerExtDB.map(el => {
           return (
             <Link to={`/lowerextremities/${el.url}`} params={el} className="bodyContentList--item" key={el.name}>
-              <div className="bodyContentList--item-illustration">
-                {/* {el.illustration} */}
+              {/* <div className="bodyContentList--item-illustration">
                 <SelectedHead />
-              </div>
+              </div> */}
               <div className="bodyContentList--item-text">
                 {el.name}<KeyboardArrowRightRoundedIcon />
               </div>

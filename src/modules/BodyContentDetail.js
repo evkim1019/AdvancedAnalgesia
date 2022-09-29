@@ -96,7 +96,7 @@ function BodyContentDetail() {
           <div className="contentDetail--section-content">
             {pathContent.videos.map((video, index) => {
               return (
-                <ReactPlayer url={video.url} muted={true} playing={true} controls={true} width="100%" height="auto" />
+                <ReactPlayer url={video.url} muted={true} playing={true} controls={true} width="100%" height="auto" playsinline={true} />
               )
             })}
           </div>
@@ -186,6 +186,7 @@ function BodyContentDetail() {
 
 
         {/* Procedure */}
+        { pathContent.procedure && pathContent.procedure.content.length >= 1 ?
         <div className="content--section">
           <h3>{pathContent.procedure.title}</h3>
           <div className="contentDetail--section-content">
@@ -198,6 +199,7 @@ function BodyContentDetail() {
             </ol>
           </div>
         </div>
+        : null }
 
 
         {/* Pitfall */}

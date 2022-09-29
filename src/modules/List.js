@@ -81,7 +81,7 @@ function List() {
         { listHead.length >= 1 ? 
         <>
         <div className="listSubHeadline">
-          <h3>Head</h3>
+          <h2>Head</h2>
         </div>
         <ul>
           {listHead.map(el => 
@@ -95,7 +95,7 @@ function List() {
         {listTorso.length >= 1 ? 
         <>
         <div className="listSubHeadline">
-          <h3>Torso</h3>
+          <h2>Torso</h2>
         </div>
         <ul>
           {listTorso.map(el => 
@@ -109,7 +109,7 @@ function List() {
         {listUpperExtremity.length >= 1 ? 
         <>
         <div className="listSubHeadline">
-          <h3>Upper extremity</h3>
+          <h2>Upper extremity</h2>
         </div>
         <ul>
           {listUpperExtremity.map(el => 
@@ -123,7 +123,7 @@ function List() {
         { listLowerExtremity.length >= 1 ? 
         <>
         <div className="listSubHeadline">
-          <h3>Lower extremity</h3>
+          <h2>Lower extremity</h2>
         </div>
         <ul>
           {listLowerExtremity.map(el => 

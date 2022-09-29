@@ -1,6 +1,6 @@
 #mobileBottomNav {
   padding:0 16px 15px 16px;
-  position:absolute;
+  position:fixed;
   bottom: 0;
   width: calc(100% - 32px);
   height: fit-content;
@@ -9,9 +9,11 @@
 }
 #dark #mobileBottomNav {
   border-top: 1px solid #666;
+  background-color: #1f2b2f;
 }
 #light #mobileBottomNav {
   border-top: 1px solid #ccc;
+  background-color: #f7f7f7;
 }
 .mobileBottomNav--wrapper {
   display: flex;

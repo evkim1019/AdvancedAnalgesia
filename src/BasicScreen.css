@@ -1,0 +1,58 @@
+.basicScreen {
+  padding-bottom: 100px;
+  word-break: break-word;
+}
+
+
+.accordion-title {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+#light .accordion-title--selected {
+  color: #9a6413;
+}
+#light .accordion-title--default {
+  color: #005c73;
+}
+#dark .accordion-title--selected {
+  color: #E7B06D;
+}
+#dark .accordion-title--default {
+  color: #ededed;
+}
+
+
+
+.accordion-content {
+  padding: 20px 0 40px;
+  border-bottom: 1px solid #ccc;
+}
+.accordion-content--show {
+  display:block;
+}
+.accordion-content--hidden {
+  display: none;
+}
+.accordion-content ul, .accordion-content ol {
+  padding: 5px 0;
+}
+.accordion-content ul p, .accordion-content ol p {
+  font-weight:bold;
+}
+.accordion-content li {
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+
+
+
+.accordion-content--reference {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+
+
+.basicScreen__bottomFill {
+  height: 100px;
+}

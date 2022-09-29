@@ -1,20 +1,13 @@
 import React, { useState } from 'react'
 import './Body.css'
 
-// import {ReactComponent as BoldBodyOutline} from '../illustrations/body-bold.svg'
-// import {ReactComponent as BodyOutline} from '../illustrations/body-outline.svg'
-import {ReactComponent as BodyOutline} from '../illustrations/outlined-bodyoutline.svg'
-import {ReactComponent as SelectedHead} from '../illustrations/head.svg'
-import {ReactComponent as SelectedTorso} from '../illustrations/torso.svg'
-import {ReactComponent as SelectedArms} from '../illustrations/arms.svg'
-import {ReactComponent as SelectedLegs} from '../illustrations/legs.svg'
 
-import {ReactComponent as SelectedArmLeft} from '../illustrations/armL.svg'
-import {ReactComponent as SelectedArmRight} from '../illustrations/armR.svg'
-import {ReactComponent as SelectedLegLeft} from '../illustrations/legL.svg'
-import {ReactComponent as SelectedLegRight} from '../illustrations/legR.svg'
-import BodyContentList from './BodyContentList'
-// import BodyOutline from '../illustrations/body-outline.svg'
+
+import bodyOutline from '../illustrations/bodyOutline.png'
+import armsImg from '../illustrations/arms.png';
+import torsoImg from '../illustrations/torso.png';
+import headImg from '../illustrations/headandneck.png';
+import legsImg from '../illustrations/legs.png'
 
 
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
@@ -87,6 +80,18 @@ function Body() {
   }
 
 
+  // Resize svg viewbox
+  // function resizeSVG() {
+  //   var  svg = document.querySelectorAll('.svgImg')
+  //   // Get the bounds of the SVG content
+  //   var  bbox = svg.getBBox();
+  //   // Update the width and height using the size of the contents
+  //   svg.setAttribute("width", bbox.x + bbox.width + bbox.x);
+  //   svg.setAttribute("height", bbox.y + bbox.height + bbox.y);
+  // }
+  // resizeSVG()
+
+
   return (
     <div className="body">
 
@@ -94,17 +99,20 @@ function Body() {
       {contentDisplay[0].value ? 
       <div className="illustrationWrapper bodyOutlineSvg">
         {/* <BoldBodyOutline className="body--outline-bold" /> */}
-        <BodyOutline className="body--outline" />
+        <img src={bodyOutline} className="body--outline" alt="" />
+        {/* <BodyOutline className="body--outline" /> */}
         {/* <img src={BodyOutline} alt="" /> */}
         <div className="selectionWrapper">
 
-           <SelectedArms className="body--arms" fill={selectedSection[2].value ? "#05e6e1" : "none"} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("arms")} />
+          <img src={armsImg} className={`body--arms svgImg ${selectedSection[2].value ? 'selectedPart' : 'nonSelectedPart'}`} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("arms")} />
 
-          <SelectedHead className="body--head" fill={selectedSection[0].value ? "#05e6e1" : "none"} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("head")} />
+          
+          <img src={headImg} className={`body--head svgImg ${selectedSection[0].value ? "selectedPart" : "nonSelectedPart"}`} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("head")} preserveAspectRatio="xMidYMid meet" />
 
-          <SelectedTorso className="body--torso" fill={selectedSection[1].value ? "#05e6e1" : "none"} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("torso")} />
+          <img src={torsoImg} className={`body--torso svgImg ${selectedSection[1].value ? "selectedPart" : "nonSelectedPart"}`} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("torso")} />
 
-          <SelectedLegs className="body--legs" fill={selectedSection[3].value ? "#05e6e1" : "none"} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("legs")} />
+          
+          <img src={legsImg} className={`body--legs svgImg ${selectedSection[3].value ? "selectedPart" : "nonSelectedPart"}`} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("legs")} />
         </div>
       </div>
       : null}
@@ -118,23 +126,19 @@ function Body() {
       selectedSection.map(selected => {
         if( selected.value === true && selected.label === 'head' ){
           return (
-            // <div onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("headneck")} className="button-full" key="btn-head">Head & neck</div>
             <Link to={`/headneck`} key={selected.label} className="button-full">Head & Neck</Link>
           )
         } else if( selected.value === true && selected.label === 'torso' ){
           return (
             <Link to={`/${selected.label}`} key={selected.label} className="button-full">Torso</Link>
-            // <div onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("torso")} className="button-full" key="btn-torso">Torso</div>
           )
         } else if( selected.value === true && selected.label === 'arms' ){
           return (
             <Link to={`/upperextremities`} key={selected.label} className="button-full">Upper Extremities</Link>
-            // <div onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("upperextremities")} className="button-full" key="btn-arms">Upper extremities</div>
           )
         } else if( selected.value === true && selected.label === 'legs' ){
           return (
             <Link to={`/lowerextremities`} key={selected.label} className="button-full">Lower Extremities</Link>
-            // <div onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("lowerextremities")} className="button-full" key="btn-legs">Lower extremities</div>
           )
         }
       })
@@ -143,35 +147,7 @@ function Body() {
 
       
 
-      {/* Show head content */}
-      {/* {contentDisplay[1].value ? 
-        <div className="bodyContentList--container">
-          <p onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("body")} className="bodyContentList--breadcrumb"><KeyboardArrowLeftRoundedIcon /> Body</p>
-          <BodyContentList category="head" />
-          <p onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("body")} className="button-full-secondary float-bottom">Back</p>
-        </div>
-      : null}
-      {contentDisplay[2].value ? 
-        <div className="bodyContentList--container">
-          <p onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("body")} className="bodyContentList--breadcrumb"><KeyboardArrowLeftRoundedIcon /> Body</p>
-          <BodyContentList category="torso" />
-          <p onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("body")} className="button-full-secondary float-bottom">Back</p>
-        </div>
-      : null}
-      {contentDisplay[3].value ? 
-        <div className="bodyContentList--container">
-          <p onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("body")} className="bodyContentList--breadcrumb"><KeyboardArrowLeftRoundedIcon /> Body</p>
-          <BodyContentList category="arms" />
-          <p onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("body")} className="button-full-secondary float-bottom">Back</p>
-        </div>
-      : null}
-      {contentDisplay[4].value ? 
-        <div className="bodyContentList--container">
-          <p onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("body")} className="bodyContentList--breadcrumb"><KeyboardArrowLeftRoundedIcon /> Body</p>
-          <BodyContentList category="legs" />
-          <p onClick={() => handleContentDisplay({ contentDisplay, setContentDisplay})("body")} className="button-full-secondary float-bottom">Back</p>
-        </div>
-      : null} */}
+      
       
 
     </div>

@@ -21,7 +21,9 @@
   padding-bottom: 40px;
 }
 .bodyContentList--item {
-  padding: 10px 0;
+  /* padding: 10px 0; */
+  padding: 20px 0;
+
   display: flex;
   width: 100%;
   text-decoration: none;
@@ -40,15 +42,18 @@
   max-height: 55px;
   text-align:center;
 }
-.bodyContentList--item-illustration svg {
+.bodyContentList--item-illustration svg, .bodyContentList--item-illustration img {
   height: 100%;
+  max-width: 100%;
   width: auto;
 }
 .bodyContentList--item-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  /* width: 80%; */
+  
+  width: 100%;
 }
 .bodyContentList--item-text svg {
   opacity: 0.4;

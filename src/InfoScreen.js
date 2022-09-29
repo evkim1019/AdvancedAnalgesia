@@ -8,13 +8,13 @@ function InfoScreen() {
   return (
     <div className="infoScreen">
       {/* Book ad */}
-      <div className="infoScreen--book-ad">
+      {/* <div className="infoScreen--book-ad">
         <img src={require("./illustrations/book-ad.jpg")} alt="Advanced Analgesia book advertisement" />
       </div>
-      <a href="" className="button-full infoScreen--book-button">Learn more about the book</a>
+      <a href="" className="button-full infoScreen--book-button">Learn more about the book</a> */}
 
       {/* About */}
-      <div className="infoScreen--about content--section">
+      {/* <div className="infoScreen--about content--section">
         <h1>About</h1>
         <h3>To advance the science, the art and the practice of Emergency Department analgesia for the benefit of our patients.</h3>
         <p>
@@ -31,7 +31,7 @@ function InfoScreen() {
           <li>Source five: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
           <li>Source six: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
         </ul>
-      </div>
+      </div> */}
 
       {/* Source */}
       {/* <div className="infoScreen--source content--section">

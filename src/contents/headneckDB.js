@@ -2,7 +2,7 @@ const headneckDB = [
   {
     name: "Cervical Plexus",
     url: "cervical-plexus",
-    illustration: "illust",
+    illustration: "https://advanced-analgesia.s3.amazonaws.com/headandneck/cervicalplexus/Cervical+Plexus.jpg",
     materials:{
       title: "Materials: Transducer, Needle, Volume of anesthetic",
       content: {
@@ -22,8 +22,8 @@ const headneckDB = [
     },
     contraindications: [
       {
-        title: "Please list any contraindications to the procedure",
-        content: ["Allergy to local anesthetic", "Infection overInfection, abscess over site of injection"]
+        title: "",
+        content: ["Allergy to local anesthetic", "Overlying infection", "abscess over site of injection"]
       },
       {
         title: "Relative Contraindication",
@@ -63,7 +63,7 @@ const headneckDB = [
       ],
     },
     illustrations: [
-      {caption: "Cervical Plexus Block", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/cervicalplexus/Cervical+Plexus.jpg"},
+      {caption: "Dermatome Location", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/cervicalplexus/Cervical+Plexus.jpg"},
     ],
     photos: [
       {caption: "Patient Position", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/cervicalplexus/Picture1.png"},
@@ -99,7 +99,7 @@ const headneckDB = [
     contraindications: [
       {
         title: "",
-        content: ["Allergy to local anesthetic", "Infection, abscess over site of injection"]
+        content: ["Allergy to local anesthetic", "Overlying infection", "abscess over site of injection"]
       }
     ],
     positioning: {
@@ -120,7 +120,7 @@ const headneckDB = [
       ],
     },
     illustrations: [
-      {caption: "Greater Auricular Nerve", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/greaterauricularnerve/Greater+Auricular+Nerve.jpg"},
+      {caption: "Dermatome Location", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/greaterauricularnerve/Greater+Auricular+Nerve.jpg"},
     ],
     photos: [
       {caption: "Probe placement", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/greaterauricularnerve/Picture1.png"},
@@ -154,7 +154,7 @@ const headneckDB = [
     },
     contraindications: [
       {
-        title: "Please list any contraindications to the procedure.",
+        title: "",
         content: ["Allergy to local anesthetic", "Infection or abscess over site of injection"]
       }
     ],
@@ -177,8 +177,8 @@ const headneckDB = [
       ]
     },
     illustrations: [
-      {caption: "Occipital Nerve", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/occipitalnerve/Occipital+Nerve.jpg"},
-      {caption: "Occipital Nerve", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/occipitalnerve/Occipital+Nerve+side.jpg"},
+      {caption: "Dermatome Location Posterior", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/occipitalnerve/Occipital+Nerve.jpg"},
+      {caption: "Dermatome Location Lateral", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/occipitalnerve/Occipital+Nerve+side.jpg"},
     ],
     photos: [
       {caption: "Injection Site", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/occipitalnerve/Picture1.png"},
@@ -211,8 +211,8 @@ const headneckDB = [
     },
     contraindications: [
       {
-        title: "Please list any contraindications to the procedure.",
-        content: ["Allergy to local anesthetic", "Infection overInfection, abscess over site of injection", "injection through infected tissue","Pre-existing nerve injury"]
+        title: "",
+        content: ["Allergy to local anesthetic", "Infection or abscess over site of injection","Pre-existing nerve injury"]
       }
     ],
     positioning: {
@@ -233,8 +233,8 @@ const headneckDB = [
       ]
     },
     illustrations: [
-      {caption: "Infraorbital Nerve Block", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve_1.jpg"},
-      {caption: "Infraorbital Nerve Block", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve+side_2.jpg"},
+      {caption: "Dermatome Location", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve_1.jpg"},
+      {caption: "Dermatome Location Lateral", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve+side_2.jpg"},
     ],
     photos: [
       {caption: "Injection Site", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Picture1.png"},
@@ -267,8 +267,8 @@ const headneckDB = [
     },
     contraindications: [
       {
-        title: "Contraindications",
-        content: ["Allergy to local anesthetic", "Infection overInfection, abscess over site of injection", "injection through infected tissue","Pre-existing nerve injury"]
+        title: "",
+        content: ["Allergy to local anesthetic","Infection or abscess over site of injection","Pre-existing nerve injury"]
       }
     ],
     positioning: {
@@ -288,8 +288,8 @@ const headneckDB = [
       content: []
     },
     illustrations: [
-      {caption: "Infraorbital Nerve Block", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve_1.jpg"},
-      {caption: "Infraorbital Nerve Block", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve+side_2.jpg"},
+      {caption: "Dermatome Location", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve_1.jpg"},
+      {caption: "Dermatome Location Lateral", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve+side_2.jpg"},
     ],
     photos: [
       {caption: "Injection Site", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/mentalnerve/Picture1.png"},
@@ -323,8 +323,8 @@ const headneckDB = [
     },
     contraindications: [
       {
-        title: "Contraindications",
-        content: ["Allergy to local anesthetic", "Infection overInfection, abscess over site of injection", "Suspected Globe injury","Pre-existing nerve injury"]
+        title: "Contraidications",
+        content: ["Allergy to local anesthetic", "Infection or abscess over site of injection", "Suspected Globe injury","Pre-existing nerve injury"]
       }
     ],
     positioning: {
@@ -345,8 +345,8 @@ const headneckDB = [
       ],
     },
     illustrations: [
-      {caption: "Infraorbital Nerve Block", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve_1.jpg"},
-      {caption: "Infraorbital Nerve Block", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve+side_2.jpg"},
+      {caption: "Dermatome Location", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve_1.jpg"},
+      {caption: "Dermatome Location Lateral", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/infraorbital/Trigeminal+Nerve+side_2.jpg"},
     ],
     photos: [
       {caption: "Injection Site", url: "https://advanced-analgesia.s3.amazonaws.com/headandneck/supraorbital/Picture1.png"},
@@ -379,7 +379,7 @@ const headneckDB = [
     },
     contraindications: [
       {
-        title: "Contraindications",
+        title: "",
         content: ["Overlying infection", "Allergy to anesthetic"]
       }
     ],
