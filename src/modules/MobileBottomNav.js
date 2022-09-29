@@ -13,11 +13,13 @@ import { Link, useParams } from 'react-router-dom';
 function MobileBottomNav() {
 
   const params = useParams()
-  console.log('params', params)
 
+  console.log('Object.values(params)[0]', Object.values(params)[0])
+  
   // Bottom Nav selection Toggle States & function
   const [ selectedNav, setSelectedNav ] = useState([
-    { label:"one", value: params === '' ? true : false},
+    // { label:"one", value: Object.values(params)[0] !== 'basics' && Object.values(params)[0] !== 'list' && Object.values(params)[0] !== 'info' ? true : false},
+    { label:"one", value: Object.values(params)[0] === undefined ? true : false},
     { label:"two", value: Object.values(params)[0] === 'basics' ? true : false},
     { label: "three", value: Object.values(params)[0] === 'list' ? true : false},
     { label: "four", value: Object.values(params)[0] === 'info' ? true : false}
@@ -35,26 +37,27 @@ function MobileBottomNav() {
     setSelectedNav(newBottomNavSelected)
   }
 
+
   return (
     <div id="mobileBottomNav">
       <div className="mobileBottomNav--wrapper smallText">
 
-        <Link to='/' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('one')} className={`mobileBottomNav--item mobileBottomNav--itemOne ${selectedNav[0].value === true ? 'bottomNavActive' : ''}`}>
+        <Link to='/' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('one')} className={`mobileBottomNav--item mobileBottomNav--itemOne ${selectedNav[0].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
           <AccessibilityNewRoundedIcon />
           <p>Body</p>
         </Link>
         
-        <Link to='/basics' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('two')} className={`mobileBottomNav--item mobileBottomNav--itemTwo ${selectedNav[1].value === true ? 'bottomNavActive' : ''}`}>
+        <Link to='/basics' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('two')} className={`mobileBottomNav--item mobileBottomNav--itemTwo ${selectedNav[1].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
           <StickyNote2OutlinedIcon />
           <p>Basics</p>
         </Link>
 
-        <Link to='/list' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('three')} className={`mobileBottomNav--item mobileBottomNav--itemThree ${selectedNav[2].value === true ? 'bottomNavActive' : ''}`}>
+        <Link to='/list' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('three')} className={`mobileBottomNav--item mobileBottomNav--itemThree ${selectedNav[2].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
           <SortByAlphaOutlinedIcon />
           <p>List</p>
         </Link>
 
-        <Link to='/info' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('four')}  className={`mobileBottomNav--item mobileBottomNav--itemFour ${selectedNav[3].value === true ? 'bottomNavActive' : ''}`}>
+        <Link to='/info' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('four')}  className={`mobileBottomNav--item mobileBottomNav--itemFour ${selectedNav[3].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
           <HelpOutlineIcon />
           <p>Info</p>
         </Link>

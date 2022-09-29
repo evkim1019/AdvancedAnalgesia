@@ -36,12 +36,39 @@
 .accordion-content ul, .accordion-content ol {
   padding: 5px 0;
 }
+.accordion-content ul ul, .accordion-content ol ol {
+  margin-left: 20px;
+  padding:0;
+}
 .accordion-content ul p, .accordion-content ol p {
   font-weight:bold;
 }
 .accordion-content li {
   margin-left: 20px;
   padding-bottom: 5px;
+}
+.accordion-content--img img{
+  width: 100%;
+  display: block;
+  padding-top: 10px;
+}
+.accordion-content table {
+  table-layout: auto;
+  border: 1px solid #ccc;
+  min-width: 100%;
+  font-size: 0.8em;
+}
+.accordion-content table td {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-collapse: collapse;
+}
+.accordion-content table tr:last-child td {
+  border-bottom: none;
+}
+.accordion-content table td:last-child{
+  border-right: none;
 }
 
 

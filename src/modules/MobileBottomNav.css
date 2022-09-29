@@ -30,7 +30,11 @@
 /* Active style */
 .bottomNavActive {
   margin-top:-2px;
-  padding-top: 11px!important;
+  padding-top: 11px;
+}
+.bottomNavInactive {
+  margin-top: 0;
+  padding-top: 13px;
 }
 #light .bottomNavActive {
   border-top: 4px solid #005c73;
@@ -39,6 +43,14 @@
 #dark .bottomNavActive {
   border-top: 4px solid #D2FAFB;
   color:#E7B06D;
+}
+#light .bottomNavInactive {
+  border-top: none;
+  color:#005c73;
+}
+#dark .bottomNavInactive {
+  border-top: none;
+  color:#EFEFD7;
 }
 
 

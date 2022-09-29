@@ -66,7 +66,7 @@ function BasicScreen() {
   return (
     <div className="basicScreen">
 
-
+    <div className="accordionWrapper">
       <div className="accordion">
         <div className="accordion-title" onClick={handleChange('panel1')}>
           <h2 className={`${expanded === 'panel1' ? "accordion-title--selected" : "accordion-title--default"}`}>Introduction</h2>
@@ -153,7 +153,108 @@ function BasicScreen() {
           <p>Lidocaine, bupivacaine and ropivacaine are all amides. If a patient is allergic to any one of these, an ester type anesthetic should be used, some examples of which include chloroprocaine and prilocaine. A table of the commonly used anesthetics in the emergency department are listed below.</p>
           <br/>
 
-          <p>******** TABLE IMAGE PLACE HOLDER *********</p>
+          <p><strong>Local Anesthetic Maximum Bolus Doses in Regional Anesthesia</strong></p>
+          <table>
+            <tr>
+              <td>Local Anesthetic</td>
+              <td>Max Dose(mg/kg)</td>
+              <td>50 kg(mL)</td>
+              <td>60 kg(mL)</td>
+              <td>70 kg(mL)</td>
+              <td>80 kg(mL)</td>
+              <td>90 kg(mL)</td>
+              <td>100 kg(mL)</td>
+              <td>Half-life Additional Considerations</td>
+            </tr>
+            <tr>
+              <td>Bupivacaine 0.25%(2.5 mg/mL)</td>
+              <td>2 mg/kg</td>
+              <td>100 mg(40 mL)</td>
+              <td>120 mg(48 mL)</td>
+              <td>140 mg(56 mL)</td>
+              <td>160 mg(64 mL)</td>
+              <td>175 mg(70 mL)</td>
+              <td>-</td>
+              <td>4-8 hours Contraindicated in pregnancy</td>
+            </tr>
+            <tr>
+              <td>Bupivacaine 0.5%(5 mg/mL)</td>
+              <td>2 mg/kg</td>
+              <td>100 mg(20 mL)</td>
+              <td>120 mg(24 mL)</td>
+              <td>140 mg(28 mL)</td>
+              <td>160 mg(32 mL)</td>
+              <td>175 mg(35 mL)</td>
+              <td>-</td>
+              <td>4-8 hours Contraindicated in pregnancy</td>
+            </tr>
+            <tr>
+              <td>Lidocaine 1% w/ epi (10 mg/mL)</td>
+              <td>7 mg/kg</td>
+              <td>350 mg(35 mL)</td>
+              <td>420 mg(42 mL)</td>
+              <td>490 mg(49 mL)</td>
+              <td>500 mg(50 mL)</td>
+              <td>-</td>
+              <td>-</td>
+              <td>2-6 hours. Good for facial, digit and penile blocks</td>
+            </tr>
+            <tr>
+              <td>Lidocaine 1%(10 mg/mL)</td>
+              <td>4 mg/kg</td>
+              <td>200 mg(20 mL)</td>
+              <td>240 mg(24 mL)</td>
+              <td>280 mg(28 mL)</td>
+              <td>300 mg(30 mL)</td>
+              <td>-</td>
+              <td>-</td>
+              <td>1-4 hours. Do not repeat within 2 hours Ideal for shorter blocks</td>
+            </tr>
+            <tr>
+              <td>Lidocaine 2%(20 mg/mL)</td>
+              <td>4 mg/kg</td>
+              <td>200 mg(10 mL)</td>
+              <td>240 mg(12 mL)</td>
+              <td>280 mg(14 mL)</td>
+              <td>300 mg(15 mL)</td>
+              <td>-</td>
+              <td>-</td>
+              <td>1-4 hours. Do not repeat within 2 hours Ideal for shorter blocks</td>
+            </tr>
+            <tr>
+              <td>Lidocaine 2%(20 mg/mL)</td>
+              <td>4 mg/kg</td>
+              <td>200 mg(10 mL)</td>
+              <td>240 mg(12 mL)</td>
+              <td>280 mg(14 mL)</td>
+              <td>300 mg(15 mL)</td>
+              <td>-</td>
+              <td>-</td>
+              <td>1-4 hours. Do not repeat within 2 hours Ideal for shorter blocks</td>
+            </tr>
+            <tr>
+              <td>Ropivacaine 0.2%(2 mg/mL)</td>
+              <td>3 mg/kg</td>
+              <td>150 mg(75 mL)</td>
+              <td>180 mg(90 mL)</td>
+              <td>210 mg(105 mL)</td>
+              <td>240 mg(120 mL)</td>
+              <td>270 mg(135 mL)</td>
+              <td>300 mg(150 mL)</td>
+              <td>4-10 hours. Less cardiotoxic than bupivacaine = safer for high-dose, high-volume blocks</td>
+            </tr>
+            <tr>
+              <td>Ropivacaine 0.5%(5 mg/mL)</td>
+              <td>3 mg/kg</td>
+              <td>150 mg(30 mL)</td>
+              <td>180 mg(36 mL)</td>
+              <td>210 mg(42 mL)</td>
+              <td>240 mg(48 mL)</td>
+              <td>270 mg(48 mL)</td>
+              <td>300 mg(48 mL)</td>
+              <td>4-10 hours. Less cardiotoxic than bupivacaine = safer for high-dose, high-volume blocks</td>
+            </tr>
+          </table>
           <p className="accordion-content--reference">* Do not exceed maximum recommended dose regardless of weight This quick reference table shows the recommended safe maximal doses for commonly used anesthetics in regional anesthesia. It is important to note that the acutely ill or elderly may be more susceptible to local anesthetic toxicity.</p>
 
           <br />
@@ -226,11 +327,350 @@ function BasicScreen() {
           <p><strong>Local anesthetic systemic toxicity (LAST)</strong> is a life-threatening adverse reaction resulting from local anesthetic reaching significant systemic circulating levels. This generally occurs with accidental intravascular injection or use of excessive doses.  It is rare, and all data known about it are from case reports and retrospective analysis. It is estimated there is an overall incidence of 27 per peripheral nerve blocks, with different blocks having different rates of LAST. The mechanism is unclear, however it is believed to be by blockade of sodium channels in critical areas including central nervous system neurons and cardiac tissue. Blockade of sodium channels in cortical neurons results in seizures and respiratory arrest, whereas blockade in the cardiovascular systems results in arrythmias including bradycardia, ventricular arrythmias, hypotension and cardiac arrest.</p>
           <br />
           <p> As seen in the table below (figure 1), the symptoms generally follow a linear progression from tinnitus and oral sensory abnormalities to cardiovascular. Generally, CNS toxicity resulting in seizures occur before cardiovascular collapse. As such, if early symptoms of LAST start to occur, injection or infusion of further anesthetic should immediately be stopped, and treatment highly considered.</p>
+          <div className="accordion-content--img">
+            <img src="https://advanced-analgesia.s3.amazonaws.com/basics/BasicScreen_LAST-fig1.png" alt="" />
+            <p className="accordion-content--reference">Figure 1. Relationship of signs and symptoms of toxicity </p>
+          </div>
+          <div className="accordion-content-reference">
+            <p>Source: Local Anesthetics, Goldfrank's Toxicologic Emergencies, 10e</p>
+            <p>Citation: Hoffman RS, Howland M, Lewin NA, Nelson LS, Goldfrank LR. Goldfrank's Toxicologic Emergencies, 10e;</p>
+          </div>
+          <br />
+          <br />
+          <h3>Treatment:</h3>
+          <p>LAST is rare and almost always occurs within minutes of injection of local anesthetic. In addition to standard care given for seizures and/or cardiac arrest, a lipid emulsion therapy should be administered. Although the mechanism of action is unclear in LAST, it may act as a lipid sink and facilitate redistribution of local anesthetic from target organs.</p>
+          <br />
+          <h3>Dosing 20% intralipid:</h3>
+          <ul>
+            <li>Bolus: 1-1.5 mL/kg over 1 min</li>
+            <ul>
+              <li>Can repeat bolus every 3 minutes up to a total dose of 3 mL/kg</li>
+            </ul>
+            <li>Infusion: 0.25 mL/kg/min</li>
+            <ul>
+              <li>Continue infusion until hemodynamically stable for at least 10 minutes</li>
+              <li>Can increase infusion to 0.5 mL/kg/min if BP worsens</li>
+            </ul>
+          </ul>
+          <p>The needed equipment to recognize and treat LAST in timely manner should be in place before any RA procedure is performed. This includes having the patient on a cardiac monitor, an intravenous line in place, and easily and rapidly accessible intralipid to be able to immediately administer it.</p>
+          <br />
+          <br />
+          <div className="accordion-content--reference">
+            <ol>
+              <li>Arumugam S, Contino V, Kolli S. Local anesthetic systemic toxicity (Last) - a review and update. Curr Anesthesiol Rep. 2020;10(2):218-226.</li>
+              <li>Ciechanowicz S, Patil V. Lipid emulsion for local anesthetic systemic toxicity. Anesthesiol Res Pract. 2012;2012:131784.</li>
+            </ol>
+          </div>
+        </div>
+        
+      </div>
+
+
+      <div className="accordion">
+        <div className="accordion-title" onClick={handleChange('panel6')}>
+          <h2 className={`${expanded === 'panel6' ? "accordion-title--selected" : "accordion-title--default"}`}>Reimbursement</h2>
+        </div>
+        <div className={`accordion-content ${expanded === 'panel6' ? "accordion-content--show" : "accordion-content--hidden"}`}>
+          <p>Regional analgesia presents an opportunity to provide better care, and also reimbursable care for physician and physician groups. Below is a summary of reimbursement based on 2020 Medicare rates. While there is direct reimbursement for procedures performed by emergency physicians, the far greater benefit to the health system and patients are decreased costs form decreased length of stay, decreased morbidity and mortality and improve patient satisfaction.</p>
+          <br/>
+          <table cellPadding="0" cellSpacing="0">
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>
+                <h3>RVU Table</h3>
+                <p className="accordion-content--reference">based on 2020 Medicare Reimbursement Rates</p>
+              </td>
+            </tr>
+            <tr>
+              <td colSpan="4">
+                <ul>
+                  <li>Medicaid rates typically pay between 50% - 80% of Medicare</li>
+                  <li>Private insurance typically pays 1.25 to 10X Medicare Rates</li>
+                  <li>Most insurers and Medicare decrease the second and subsequent procedures performed on the same day by 50-75% reimbursement of the fee schedule</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>Head & Neck</td>
+            </tr>
+            <tr>
+              <td><strong>Block</strong></td>
+              <td><strong>RVU</strong></td>
+              <td><strong>Medicare 2020</strong></td>
+              <td><strong>Medicare 2021 presumed</strong></td>
+            </tr>
+            <tr>
+              <td>Trigeminal Nerve Blocks</td>
+              <td>1.44</td>
+              <td>$51.97</td>
+              <td>$48.07</td>
+            </tr>
+            <tr>
+              <td>Superficial Cervical Plexus Block</td>
+              <td>1.23</td>
+              <td>$51.97</td>
+              <td>$48.07</td>
+            </tr>
+            <tr>
+              <td>Greater Auricular Nerve Block</td>
+              <td>1.23</td>
+              <td>$44.39</td>
+              <td>$41.06</td>
+            </tr>
+            <tr>
+              <td>Occipital Nerve Block</td>
+              <td>1.55</td>
+              <td>$55.94</td>
+              <td>$51.74</td>
+            </tr>
+{/*  */}
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>Upper Extremity</td>
+            </tr>
+            <tr>
+              <td>Interscalene brachial plexus block</td>
+              <td>1.83</td>
+              <td>$66.04</td>
+              <td>$61.09</td>
+            </tr>
+            <tr>
+              <td>Supraclavicular brachial plexus block</td>
+              <td>1.83</td>
+              <td>$66.04</td>
+              <td>$61.09</td>
+            </tr>
+            <tr>
+              <td>Suprascapular Block</td>
+              <td>1.64</td>
+              <td>$55.19</td>
+              <td>$54.74</td>
+            </tr>
+            <tr>
+              <td>Forearm block Ulnar Nerve Block</td>
+              <td>1.23</td>
+              <td>$44.39</td>
+              <td>$41.06</td>
+            </tr>
+            <tr>
+              <td>Radial Nerve Block</td>
+              <td>1.23</td>
+              <td>$44.39</td>
+              <td>$41.06</td>
+            </tr>
+            <tr>
+              <td>Median  Nerve Block</td>
+              <td>1.23</td>
+              <td>$44.39</td>
+              <td>$41.06</td>
+            </tr>
+            <tr>
+              <td>Complete Forearm Nerve block (All 3 nerves)</td>
+              <td>3.69</td>
+              <td>$133.17</td>
+              <td>$123.17</td>
+            </tr>
+            <tr>
+              <td>Landmark based Hand Block (All 3 nerves)</td>
+              <td>3.69</td>
+              <td>$133.17</td>
+              <td>$123.17</td>
+            </tr>
+{/*  */}
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>Torso / Abdomen</td>
+            </tr>
+            <tr>
+              <td>Serratus Anterior Block</td>
+              <td>1.72</td>
+              <td>$62.07</td>
+              <td>$57.41</td>
+            </tr>
+            <tr>
+              <td>PECS I Block</td>
+              <td>1.23</td>
+              <td>$44.39</td>
+              <td>$41.06</td>
+            </tr>
+            <tr>
+              <td>PECS II Block</td>
+              <td>2.95</td>
+              <td>$106.46</td>
+              <td>$98.47</td>
+            </tr>
+            <tr>
+              <td>Erector Spinae Block</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>TAP Blocks unilateral</td>
+              <td>1.62</td>
+              <td>$58.47</td>
+              <td>$54.08</td>
+            </tr>
+            <tr>
+              <td>TAP Blocks bilateral</td>
+              <td>2</td>
+              <td>$72.18</td>
+              <td>$66.76</td>
+            </tr>
+            <tr>
+              <td>PENG Block</td>
+              <td>1.53</td>
+              <td>$55.22</td>
+              <td>$51.07</td>
+            </tr>
+            <tr>
+              <td>Axillary Nerve Bolck</td>
+              <td>1.75</td>
+              <td>$63.16</td>
+              <td>$58.42</td>
+            </tr>
+{/*  */}
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>Lower Extremity</td>
+            </tr>
+            <tr>
+              <td>Fascia Iliaca Block</td>
+              <td>1.53</td>
+              <td>$55.22</td>
+              <td>$51.07</td>
+            </tr>
+            <tr>
+              <td>Femoral Nerve Block</td>
+              <td>1.53</td>
+              <td>$55.22</td>
+              <td>$51.07</td>
+            </tr>
+            <tr>
+              <td>Adductor Canal Block</td>
+              <td>1.53</td>
+              <td>$55.22</td>
+              <td>$51.07</td>
+            </tr>
+            <tr>
+              <td>Popliteal Block</td>
+              <td>1.55</td>
+              <td>$55.94</td>
+              <td>$51.74</td>
+            </tr>
+            <tr>
+              <td>Ankle Block</td>
+              <td>1.23</td>
+              <td>$44.39</td>
+              <td>$41.06</td>
+            </tr>
+            <tr>
+              <td>Posterior Tibial nerve block</td>
+              <td>1.23</td>
+              <td>$44.39</td>
+              <td>$41.06</td>
+            </tr>
+{/*  */}
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>Joint or Bursa Injections<p className="accordion-content--reference">* Same code and reimbursement for the physician regardless of injection or aspiration or agent injecting into the joint</p></td>
+            </tr>
+            <tr>
+              <td>Knees, Hip, Shoulder</td>
+              <td>1.32</td>
+              <td>$47.64</td>
+              <td>$44.06</td>
+            </tr>
+            <tr>
+              <td>Knees, Hip, Shoulder with US</td>
+              <td>1.73</td>
+              <td>$62.44</td>
+              <td>$57.75</td>
+            </tr>
+            <tr>
+              <td>Ankle, wrist, elbow, AC, TMJ</td>
+              <td>1.08</td>
+              <td>$33.98</td>
+              <td>$36.05</td>
+            </tr>
+            <tr>
+              <td>Ankle, wrist, elbow, AC, TMJ with US</td>
+              <td>1.52</td>
+              <td>$54.86</td>
+              <td>$0.74</td>
+            </tr>
+{/*  */}
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>Trigger Point Injections</td>
+            </tr>
+            <tr>
+              <td>Injection 1 or 2 named muscles</td>
+              <td>1.11</td>
+              <td>$40.06</td>
+              <td>$37.05</td>
+            </tr>
+            <tr>
+              <td>Injection 3 or more named muscles</td>
+              <td>1.25</td>
+              <td>$45.11</td>
+              <td>$41.73</td>
+            </tr>
+            <tr>
+              <td>Dry Needling/Accupuncture 1 or 2 named muscles</td>
+              <td>0.47</td>
+              <td>$16.96</td>
+              <td>$15.69</td>
+            </tr>
+            <tr>
+              <td>Dry Needling/Accupuncture 3 or more named muscles</td>
+              <td>1.72</td>
+              <td>$62.07</td>
+              <td>$57.41</td>
+            </tr>
+{/*  */}
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>Hematoma Blocks<p className="accordion-content--reference">* If the hematoma is in a joint, you would use the arthrocentesis code. If it is in the shaft, you could use the other peripheral nerve code</p></td>
+            </tr>
+            <tr>
+              <td>Wrist</td>
+              <td>1.08</td>
+              <td>$33.98</td>
+              <td>$36.05</td>
+            </tr>
+            <tr>
+              <td>Ankle</td>
+              <td>1.08</td>
+              <td>$33.98</td>
+              <td>$36.05</td>
+            </tr>
+            <tr>
+              <td>Other long bones (ie Femur, Humerus, etc)</td>
+              <td>1.08</td>
+              <td>33.98</td>
+              <td>$57.41</td>
+            </tr>
+{/*  */}
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>ULTRASOUND for nerve blocks
+              Note: most insurers and Medicare decrease the second and subsequent procedures performed on the same day by 50-75% reimbursement of the fee schedule.</td>
+            </tr>
+            <tr>
+              <td>US for nerve block</td>
+              <td>1.62</td>
+              <td>$58.47</td>
+              <td>$54.08</td>
+            </tr>
+            <tr>
+              <td colSpan="4" style={{textAlign:"center"}}>
+                <p><strong>Note: </strong>most insurers and Medicare decrease the second and subsequent procedures performed on the same day by 50-75% reimbursement of the fee schedule.</p>
+              </td>
+            </tr>
+
+
+
+          </table>
+          
         </div>
       </div>
 
       {expanded === 'none' ? <div className="basicScreen__bottomFill"></div> : null}
 
+    </div>
     </div>
   )
 }

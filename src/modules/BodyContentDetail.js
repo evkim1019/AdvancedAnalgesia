@@ -23,7 +23,7 @@ function BodyContentDetail() {
   const [pathContent, setPathContent] = useState('')
 
 
-  console.log('pathCategory??', pathCategory)
+  console.log('pathCategory??', param, pathCategory)
   // Find current path category
   useEffect(() => {
     async function fetchPathContent () {
@@ -69,7 +69,6 @@ function BodyContentDetail() {
     // return () => clearTimeout(timer);
   }, [])
 
-  console.log(pathContent, 'pathContent')
 
 
   
@@ -86,7 +85,12 @@ function BodyContentDetail() {
       </div>
     :
       <div className="contentDetailContainer">
-        <Link to={`${pathCategory}`}>Back</Link>
+        <Link to={`${pathCategory}`}>
+          {pathCategory === 'headneck' ? " Head and Neck " : null }
+          {pathCategory === 'torso' ? " Torso " : null }
+          {pathCategory === 'upperextremities' ? " Upper Extremities " : null }
+          {pathCategory === 'lowerextremities' ? " Lower Extremities " : null }
+        </Link>
         <h1>{pathContent.name}</h1>
 
 

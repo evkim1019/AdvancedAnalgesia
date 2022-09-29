@@ -1,5 +1,5 @@
 .list {
-  /* height: calc(100vh - 133px); */
+  height: calc(100vh - 133px);
   overflow: hidden;
   padding:0!important;
 }
@@ -13,13 +13,24 @@
 .listWrap ul:last-child li:last-child {
   margin-bottom: 100px;
 }
+.listWrapper-box {
+  position:fixed;
+  height: 85%;
+  overflow: auto;
+  left:0;
+  width: 100%;
+}
+.listWrapper-box > * {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 /* Search style start */
 .listSearch {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  margin: 20px 0;
+  margin: 20px;
 }
 .listSearch input {
   padding: 10px;
@@ -76,4 +87,9 @@
 }
 #dark .listWrap li, #dark .listWrap a {
   border-bottom: 1px solid #666;
+}
+
+
+.listWrapper-box ul:last-child {
+  padding-bottom:100px;
 }
