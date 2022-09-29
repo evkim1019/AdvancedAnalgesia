@@ -39,22 +39,22 @@ function List() {
     
 
     originalHeadList.map(el => {
-      if(el.name.includes(inputValue) || el.url.includes(inputValue)){
+      if(el.name.includes(inputValue) || el.url.includes(inputValue) || el.name.toUpperCase().includes(inputValue)){
         headVisible.push(el)
       }
     })
     originalTorsoList.map(el => {
-      if(el.name.includes(inputValue) || el.url.includes(inputValue)){
+      if(el.name.includes(inputValue) || el.url.includes(inputValue) || el.name.toUpperCase().includes(inputValue)){
         torsoVisible.push(el)
       }
     })
     originalUpperExtremityList.map(el => {
-      if(el.name.includes(inputValue) || el.url.includes(inputValue)){
+      if(el.name.includes(inputValue) || el.url.includes(inputValue) || el.name.toUpperCase().includes(inputValue)){
         armsVisible.push(el)
       }
     })
     originalLowerExtremityList.map(el => {
-      if(el.name.includes(inputValue) || el.url.includes(inputValue)){
+      if(el.name.includes(inputValue) || el.url.includes(inputValue) || el.name.toUpperCase().includes(inputValue)){
         legsVisible.push(el)
       }
     })
@@ -77,6 +77,8 @@ function List() {
           <input type="search" id="search" onChange={handleSearch} value={searchInput} />
         </div>
         {/* Search end */}
+
+
 
         { listHead.length >= 1 ? 
         <>
