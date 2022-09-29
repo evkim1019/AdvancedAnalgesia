@@ -13,13 +13,14 @@ import { Link, useParams } from 'react-router-dom';
 function MobileBottomNav() {
 
   const params = useParams()
+  console.log('params', params)
 
   // Bottom Nav selection Toggle States & function
   const [ selectedNav, setSelectedNav ] = useState([
-    { label:"one", value: true},
-    { label:"two", value: false},
-    { label: "three", value: false},
-    { label: "four", value: false}
+    { label:"one", value: params === '' ? true : false},
+    { label:"two", value: Object.values(params)[0] === 'basics' ? true : false},
+    { label: "three", value: Object.values(params)[0] === 'list' ? true : false},
+    { label: "four", value: Object.values(params)[0] === 'info' ? true : false}
   ])
   const bottomNavSelectToggle = ({
     selectedNav, setSelectedNav, bottomNavSelectToggle
