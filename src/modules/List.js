@@ -87,7 +87,7 @@ function List() {
         { listHead.length >= 1 ? 
         <>
         <div className="listSubHeadline">
-          <h2>Head</h2>
+          <h2>Head and Neck</h2>
         </div>
         <ul>
           {listHead.map(el => 
@@ -115,7 +115,7 @@ function List() {
         {listUpperExtremity.length >= 1 ? 
         <>
         <div className="listSubHeadline">
-          <h2>Upper extremity</h2>
+          <h2>Upper Extremity</h2>
         </div>
         <ul>
           {listUpperExtremity.map(el => 
@@ -129,7 +129,7 @@ function List() {
         { listLowerExtremity.length >= 1 ? 
         <>
         <div className="listSubHeadline">
-          <h2>Lower extremity</h2>
+          <h2>Lower Extremity</h2>
         </div>
         <ul>
           {listLowerExtremity.map(el => 
@@ -139,60 +139,7 @@ function List() {
         </>
         : null}
         </div>
-        {/* { listHead.length >= 1 ? 
-        <>
-        <div className="listSubHeadline">
-          <h2>Head</h2>
-        </div>
-        <ul>
-          {listHead.map(el => 
-            <Link to={`/headneck/${el.url}`} className="list--head" key={el.url}>{el.name} <KeyboardArrowRightRoundedIcon /></Link>
-          )}
-        </ul>
-        </>
-        : null}
         
-
-        {listTorso.length >= 1 ? 
-        <>
-        <div className="listSubHeadline">
-          <h2>Torso</h2>
-        </div>
-        <ul>
-          {listTorso.map(el => 
-            <Link to={`/torso/${el.url}`} className="list--torso" key={el.url}>{el.name} <KeyboardArrowRightRoundedIcon /></Link>
-          )}
-        </ul>
-        </>
-        :null}
-        
-
-        {listUpperExtremity.length >= 1 ? 
-        <>
-        <div className="listSubHeadline">
-          <h2>Upper extremity</h2>
-        </div>
-        <ul>
-          {listUpperExtremity.map(el => 
-            <Link to={`/upperextremities/${el.url}`} className="list--arms" key={el.url}>{el.name} <KeyboardArrowRightRoundedIcon /></Link>
-          )}
-        </ul>
-        </>
-        : null}
-        
-
-        { listLowerExtremity.length >= 1 ? 
-        <>
-        <div className="listSubHeadline">
-          <h2>Lower extremity</h2>
-        </div>
-        <ul>
-          {listLowerExtremity.map(el => 
-            <Link to={`/lowerextremities/${el.url}`} className="list--arms" key={el.url}>{el.name} <KeyboardArrowRightRoundedIcon /></Link>
-          )}
-        </ul>
-        </>
-        : null} */}
         
       </div>
       

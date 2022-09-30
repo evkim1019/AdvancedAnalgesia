@@ -7,6 +7,8 @@ import { styled } from '@mui/material/styles';
 
 
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
+import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 
 import './BasicScreen.css'
 
@@ -69,6 +71,7 @@ function BasicScreen() {
     <div className="accordionWrapper">
       <div className="accordion">
         <div className="accordion-title" onClick={handleChange('panel1')}>
+          {expanded === 'panel1' ? <KeyboardArrowUpRoundedIcon /> : <KeyboardArrowDownRoundedIcon />}
           <h2 className={`${expanded === 'panel1' ? "accordion-title--selected" : "accordion-title--default"}`}>Introduction</h2>
         </div>
         <div className={`accordion-content ${expanded === 'panel1' ? "accordion-content--show" : "accordion-content--hidden"}`}>
@@ -104,6 +107,7 @@ function BasicScreen() {
 
       <div className="accordion">
         <div className="accordion-title" onClick={handleChange('panel2')}>
+          {expanded === 'panel2' ? <KeyboardArrowUpRoundedIcon /> : <KeyboardArrowDownRoundedIcon />}
           <h2 className={`${expanded === 'panel2' ? "accordion-title--selected" : "accordion-title--default"}`}>Evidence of Benefit</h2>
         </div>
         <div className={`accordion-content ${expanded === 'panel2' ? "accordion-content--show" : "accordion-content--hidden"}`}>
@@ -138,6 +142,7 @@ function BasicScreen() {
 
       <div className="accordion">
         <div className="accordion-title" onClick={handleChange('panel3')}>
+          {expanded === 'panel3' ? <KeyboardArrowUpRoundedIcon /> : <KeyboardArrowDownRoundedIcon />}
           <h2 className={`${expanded === 'panel3' ? "accordion-title--selected" : "accordion-title--default"}`}>Anesthetic Choice</h2>
         </div>
         <div className={`accordion-content ${expanded === 'panel3' ? "accordion-content--show" : "accordion-content--hidden"}`}>
@@ -154,107 +159,111 @@ function BasicScreen() {
           <br/>
 
           <p><strong>Local Anesthetic Maximum Bolus Doses in Regional Anesthesia</strong></p>
-          <table>
+
+          <div className="accordion-content--tableWrapper">
+          <table cellPadding="0" cellSpacing="0" className="tableWidth-150">
             <tr>
-              <td>Local Anesthetic</td>
-              <td>Max Dose(mg/kg)</td>
-              <td>50 kg(mL)</td>
-              <td>60 kg(mL)</td>
-              <td>70 kg(mL)</td>
-              <td>80 kg(mL)</td>
-              <td>90 kg(mL)</td>
-              <td>100 kg(mL)</td>
-              <td>Half-life Additional Considerations</td>
+              <td className="tdWidth-70">Local Anesthetic</td>
+              <td>Max Dose (mg/kg)</td>
+              <td>50 kg (mL)</td>
+              <td>60 kg (mL)</td>
+              <td>70 kg (mL)</td>
+              <td>80 kg (mL)</td>
+              <td>90 kg (mL)</td>
+              <td>100 kg (mL)</td>
+              <td className="tdWidth-70">Half-life Additional Considerations</td>
             </tr>
             <tr>
               <td>Bupivacaine 0.25%(2.5 mg/mL)</td>
               <td>2 mg/kg</td>
-              <td>100 mg(40 mL)</td>
-              <td>120 mg(48 mL)</td>
-              <td>140 mg(56 mL)</td>
-              <td>160 mg(64 mL)</td>
-              <td>175 mg(70 mL)</td>
+              <td>100 mg (40 mL)</td>
+              <td>120 mg (48 mL)</td>
+              <td>140 mg (56 mL)</td>
+              <td>160 mg (64 mL)</td>
+              <td>175 mg (70 mL)</td>
               <td>-</td>
               <td>4-8 hours Contraindicated in pregnancy</td>
             </tr>
             <tr>
-              <td>Bupivacaine 0.5%(5 mg/mL)</td>
+              <td>Bupivacaine 0.5% (5 mg/mL)</td>
               <td>2 mg/kg</td>
-              <td>100 mg(20 mL)</td>
-              <td>120 mg(24 mL)</td>
-              <td>140 mg(28 mL)</td>
-              <td>160 mg(32 mL)</td>
-              <td>175 mg(35 mL)</td>
+              <td>100 mg (20 mL)</td>
+              <td>120 mg (24 mL)</td>
+              <td>140 mg (28 mL)</td>
+              <td>160 mg (32 mL)</td>
+              <td>175 mg (35 mL)</td>
               <td>-</td>
               <td>4-8 hours Contraindicated in pregnancy</td>
             </tr>
             <tr>
               <td>Lidocaine 1% w/ epi (10 mg/mL)</td>
               <td>7 mg/kg</td>
-              <td>350 mg(35 mL)</td>
-              <td>420 mg(42 mL)</td>
-              <td>490 mg(49 mL)</td>
-              <td>500 mg(50 mL)</td>
+              <td>350 mg (35 mL)</td>
+              <td>420 mg (42 mL)</td>
+              <td>490 mg (49 mL)</td>
+              <td>500 mg (50 mL)</td>
               <td>-</td>
               <td>-</td>
               <td>2-6 hours. Good for facial, digit and penile blocks</td>
             </tr>
             <tr>
-              <td>Lidocaine 1%(10 mg/mL)</td>
+              <td>Lidocaine 1% (10 mg/mL)</td>
               <td>4 mg/kg</td>
-              <td>200 mg(20 mL)</td>
-              <td>240 mg(24 mL)</td>
-              <td>280 mg(28 mL)</td>
-              <td>300 mg(30 mL)</td>
+              <td>200 mg (20 mL)</td>
+              <td>240 mg (24 mL)</td>
+              <td>280 mg (28 mL)</td>
+              <td>300 mg (30 mL)</td>
               <td>-</td>
               <td>-</td>
               <td>1-4 hours. Do not repeat within 2 hours Ideal for shorter blocks</td>
             </tr>
             <tr>
-              <td>Lidocaine 2%(20 mg/mL)</td>
+              <td>Lidocaine 2% (20 mg/mL)</td>
               <td>4 mg/kg</td>
-              <td>200 mg(10 mL)</td>
-              <td>240 mg(12 mL)</td>
-              <td>280 mg(14 mL)</td>
-              <td>300 mg(15 mL)</td>
+              <td>200 mg (10 mL)</td>
+              <td>240 mg (12 mL)</td>
+              <td>280 mg (14 mL)</td>
+              <td>300 mg (15 mL)</td>
               <td>-</td>
               <td>-</td>
               <td>1-4 hours. Do not repeat within 2 hours Ideal for shorter blocks</td>
             </tr>
             <tr>
-              <td>Lidocaine 2%(20 mg/mL)</td>
+              <td>Lidocaine 2% (20 mg/mL)</td>
               <td>4 mg/kg</td>
-              <td>200 mg(10 mL)</td>
-              <td>240 mg(12 mL)</td>
-              <td>280 mg(14 mL)</td>
-              <td>300 mg(15 mL)</td>
+              <td>200 mg (10 mL)</td>
+              <td>240 mg (12 mL)</td>
+              <td>280 mg (14 mL)</td>
+              <td>300 mg (15 mL)</td>
               <td>-</td>
               <td>-</td>
               <td>1-4 hours. Do not repeat within 2 hours Ideal for shorter blocks</td>
             </tr>
             <tr>
-              <td>Ropivacaine 0.2%(2 mg/mL)</td>
+              <td>Ropivacaine 0.2% (2 mg/mL)</td>
               <td>3 mg/kg</td>
-              <td>150 mg(75 mL)</td>
-              <td>180 mg(90 mL)</td>
-              <td>210 mg(105 mL)</td>
-              <td>240 mg(120 mL)</td>
-              <td>270 mg(135 mL)</td>
-              <td>300 mg(150 mL)</td>
+              <td>150 mg (75 mL)</td>
+              <td>180 mg (90 mL)</td>
+              <td>210 mg (105 mL)</td>
+              <td>240 mg (120 mL)</td>
+              <td>270 mg (135 mL)</td>
+              <td>300 mg (150 mL)</td>
               <td>4-10 hours. Less cardiotoxic than bupivacaine = safer for high-dose, high-volume blocks</td>
             </tr>
             <tr>
-              <td>Ropivacaine 0.5%(5 mg/mL)</td>
+              <td>Ropivacaine 0.5% (5 mg/mL)</td>
               <td>3 mg/kg</td>
-              <td>150 mg(30 mL)</td>
-              <td>180 mg(36 mL)</td>
-              <td>210 mg(42 mL)</td>
-              <td>240 mg(48 mL)</td>
-              <td>270 mg(48 mL)</td>
-              <td>300 mg(48 mL)</td>
+              <td>150 mg (30 mL)</td>
+              <td>180 mg (36 mL)</td>
+              <td>210 mg (42 mL)</td>
+              <td>240 mg (48 mL)</td>
+              <td>270 mg (48 mL)</td>
+              <td>300 mg (48 mL)</td>
               <td>4-10 hours. Less cardiotoxic than bupivacaine = safer for high-dose, high-volume blocks</td>
             </tr>
           </table>
+          </div>
+          
           <p className="accordion-content--reference">* Do not exceed maximum recommended dose regardless of weight This quick reference table shows the recommended safe maximal doses for commonly used anesthetics in regional anesthesia. It is important to note that the acutely ill or elderly may be more susceptible to local anesthetic toxicity.</p>
 
           <br />
@@ -265,8 +274,9 @@ function BasicScreen() {
           <p>Epinephrine is a common additive to anesthetic solutions. It causes vasoconstriction in the area applied, reducing the rate of vascular absorption thereby increasing the number of molecules that remain in the area for a longer amount of time. This will extend the duration of any nerve blocks performed.  Previous investigations have found that the addition of dexamethasone in a peripheral nerve block is associated with a longer duration of sensory block and reduction in pain multiple days out.</p>
           <br />
           <div className="accordion-content--reference">
+            <p>Reference</p>
             <ol>
-              <li><a href="https://www-clinicalkey-com.revproxy.brown.edu/#!/content/playContent/1-s2.0-S2058534919301520?returnurl=null&referrer=null">https://www-clinicalkey-com.revproxy.brown.edu/#!/content/playContent/1-s2.0-S2058534919301520?returnurl=null&amp;referrer=null</a></li>
+              <li><a href="https://www-clinicalkey-com.revproxy.brown.edu/#!/content/playContent/1-s2.0-S2058534919301520?returnurl=null&referrer=null"  target="_blank">https://www-clinicalkey-com.revproxy.brown.edu/#!/content/playContent/1-s2.0-S2058534919301520?returnurl=null&amp;referrer=null</a></li>
               <li>MD MAG, MD LIE, MD LAF, MD JPWK, MD NHC, MD KL, eds. Miller's Anesthesia, 2-Volume Set. 9th edition. Elsevier; 2019.</li>
               <li>Huynh TM, Marret E, Bonnet F. Combination of dexamethasone and local anaesthetic solution in peripheral nerve blocks: A meta-analysis of randomised controlled trials. Eur J Anaesthesiol. 2015;32(11):751-758.</li>
               <li>Knezevic NN, Anantamongkol U, Candido KD. Perineural dexamethasone added to local anesthesia for brachial plexus block improves pain but delays block onset and motor blockade recovery. Pain Physician. 2015;18(1):1-14.</li>
@@ -278,6 +288,7 @@ function BasicScreen() {
 
       <div className="accordion">
         <div className="accordion-title" onClick={handleChange('panel4')}>
+          {expanded === 'panel4' ? <KeyboardArrowUpRoundedIcon /> : <KeyboardArrowDownRoundedIcon />}
           <h2 className={`${expanded === 'panel4' ? "accordion-title--selected" : "accordion-title--default"}`}>Risks of RA</h2>
         </div>
         <div className={`accordion-content ${expanded === 'panel4' ? "accordion-content--show" : "accordion-content--hidden"}`}>
@@ -308,11 +319,11 @@ function BasicScreen() {
           <div className="accordion-content--reference">
             <p>Reference</p>
             <ol>
-              <li><a href="https://rapm-bmj-com.revproxy.brown.edu/content/rapm/40/5/401.full.pdf">https://rapm-bmj-com.revproxy.brown.edu/content/rapm/40/5/401.full.pdf</a></li>
+              <li><a href="https://rapm-bmj-com.revproxy.brown.edu/content/rapm/40/5/401.full.pdf" target="_blank">https://rapm-bmj-com.revproxy.brown.edu/content/rapm/40/5/401.full.pdf</a></li>
               <li>Auroy Y, Benhamou D, Bargues L, et al. Major complications of regional anesthesia in France. The SOS regional anesthesia hotline service. Anesthesiology. 2002;97:1274–1280.</li>
-              <li>Perioperative peripheral nerve injuries <a href="https://www.nysora.com/topics/foundations-of-regional-anesthesia/patient-management/monitoring-documentation-consent-regional-anesthesia-procedures/">https://www.nysora.com/topics/foundations-of-regional-anesthesia/patient-management/monitoring-documentation-consent-regional-anesthesia-procedures/</a></li>
+              <li>Perioperative peripheral nerve injuries <a href="https://www.nysora.com/topics/foundations-of-regional-anesthesia/patient-management/monitoring-documentation-consent-regional-anesthesia-procedures/" target="_blank">https://www.nysora.com/topics/foundations-of-regional-anesthesia/patient-management/monitoring-documentation-consent-regional-anesthesia-procedures/</a></li>
               <li>Neal JM, Barrington MJ, Brull R, et al. The second asra practice advisory on neurologic complications associated with regional anesthesia and pain medicine: executive summary 2015. Reg Anesth Pain Med. 2015;40(5):401-430.</li>
-              <li><a href="https://rapm-bmj-com.revproxy.brown.edu/content/rapm/31/4/311.full.pdf">https://rapm-bmj-com.revproxy.brown.edu/content/rapm/31/4/311.full.pdf</a></li>
+              <li><a href="https://rapm-bmj-com.revproxy.brown.edu/content/rapm/31/4/311.full.pdf" target="_blank">https://rapm-bmj-com.revproxy.brown.edu/content/rapm/31/4/311.full.pdf</a></li>
               <li>Tucker RV, Peterson WJ, Mink JT, et al. Defining an ultrasound-guided regional anesthesia curriculum for emergency medicine. AEM Educ Train. 2021;5(3):e10557.</li>
             </ol>
           </div>
@@ -321,10 +332,11 @@ function BasicScreen() {
 
       <div className="accordion">
         <div className="accordion-title" onClick={handleChange('panel5')}>
+          {expanded === 'panel5' ? <KeyboardArrowUpRoundedIcon /> : <KeyboardArrowDownRoundedIcon />}
           <h2 className={`${expanded === 'panel5' ? "accordion-title--selected" : "accordion-title--default"}`}>Local Anesthetic Systemic Toxicity (LAST)</h2>
         </div>
         <div className={`accordion-content ${expanded === 'panel5' ? "accordion-content--show" : "accordion-content--hidden"}`}>
-          <p><strong>Local anesthetic systemic toxicity (LAST)</strong> is a life-threatening adverse reaction resulting from local anesthetic reaching significant systemic circulating levels. This generally occurs with accidental intravascular injection or use of excessive doses.  It is rare, and all data known about it are from case reports and retrospective analysis. It is estimated there is an overall incidence of 27 per peripheral nerve blocks, with different blocks having different rates of LAST. The mechanism is unclear, however it is believed to be by blockade of sodium channels in critical areas including central nervous system neurons and cardiac tissue. Blockade of sodium channels in cortical neurons results in seizures and respiratory arrest, whereas blockade in the cardiovascular systems results in arrythmias including bradycardia, ventricular arrythmias, hypotension and cardiac arrest.</p>
+          <p><strong>Local anesthetic systemic toxicity (LAST)</strong>is a life-threatening adverse reaction resulting from local anesthetic reaching significant systemic circulating levels. This generally occurs with accidental intravascular injection or use of excessive doses.  It is rare, and all data known about it are from case reports and retrospective analysis. It is estimated there is an overall incidence of 27 per peripheral nerve blocks, with different blocks having different rates of LAST. The mechanism is unclear, however it is believed to be by blockade of sodium channels in critical areas including central nervous system neurons and cardiac tissue. Blockade of sodium channels in cortical neurons results in seizures and respiratory arrest, whereas blockade in the cardiovascular systems results in arrythmias including bradycardia, ventricular arrythmias, hypotension and cardiac arrest.</p>
           <br />
           <p> As seen in the table below (figure 1), the symptoms generally follow a linear progression from tinnitus and oral sensory abnormalities to cardiovascular. Generally, CNS toxicity resulting in seizures occur before cardiovascular collapse. As such, if early symptoms of LAST start to occur, injection or infusion of further anesthetic should immediately be stopped, and treatment highly considered.</p>
           <div className="accordion-content--img">
@@ -356,6 +368,7 @@ function BasicScreen() {
           <br />
           <br />
           <div className="accordion-content--reference">
+            <p>Reference</p>
             <ol>
               <li>Arumugam S, Contino V, Kolli S. Local anesthetic systemic toxicity (Last) - a review and update. Curr Anesthesiol Rep. 2020;10(2):218-226.</li>
               <li>Ciechanowicz S, Patil V. Lipid emulsion for local anesthetic systemic toxicity. Anesthesiol Res Pract. 2012;2012:131784.</li>
@@ -368,15 +381,18 @@ function BasicScreen() {
 
       <div className="accordion">
         <div className="accordion-title" onClick={handleChange('panel6')}>
-          <h2 className={`${expanded === 'panel6' ? "accordion-title--selected" : "accordion-title--default"}`}>Reimbursement</h2>
+          {expanded === 'panel6' ? <KeyboardArrowUpRoundedIcon /> : <KeyboardArrowDownRoundedIcon />}
+          <h2 className={`${expanded === 'panel6' ? "accordion-title--selected" : "accordion-title--default"}`}> Reimbursement</h2>
         </div>
         <div className={`accordion-content ${expanded === 'panel6' ? "accordion-content--show" : "accordion-content--hidden"}`}>
           <p>Regional analgesia presents an opportunity to provide better care, and also reimbursable care for physician and physician groups. Below is a summary of reimbursement based on 2020 Medicare rates. While there is direct reimbursement for procedures performed by emergency physicians, the far greater benefit to the health system and patients are decreased costs form decreased length of stay, decreased morbidity and mortality and improve patient satisfaction.</p>
           <br/>
+
+
           <table cellPadding="0" cellSpacing="0">
             <tr>
               <td colSpan="4" style={{textAlign:"center"}}>
-                <h3>RVU Table</h3>
+                <h2>RVU Table</h2>
                 <p className="accordion-content--reference">based on 2020 Medicare Reimbursement Rates</p>
               </td>
             </tr>
@@ -389,8 +405,11 @@ function BasicScreen() {
                 </ul>
               </td>
             </tr>
+          </table>
+          
+          <table cellPadding="0" cellSpacing="0">
             <tr>
-              <td colSpan="4" style={{textAlign:"center"}}>Head & Neck</td>
+              <td colSpan="4" style={{textAlign:"center"}}><h2>Head & Neck</h2></td>
             </tr>
             <tr>
               <td><strong>Block</strong></td>
@@ -422,9 +441,17 @@ function BasicScreen() {
               <td>$55.94</td>
               <td>$51.74</td>
             </tr>
+          </table>
 {/*  */}
+          <table cellPadding="0" cellSpacing="0">
             <tr>
-              <td colSpan="4" style={{textAlign:"center"}}>Upper Extremity</td>
+              <td colSpan="4" style={{textAlign:"center"}}><h2>Upper Extremity</h2></td>
+            </tr>
+            <tr>
+              <td><strong>Block</strong></td>
+              <td><strong>RVU</strong></td>
+              <td><strong>Medicare 2020</strong></td>
+              <td><strong>Medicare 2021 presumed</strong></td>
             </tr>
             <tr>
               <td>Interscalene brachial plexus block</td>
@@ -474,9 +501,17 @@ function BasicScreen() {
               <td>$133.17</td>
               <td>$123.17</td>
             </tr>
+          </table>
 {/*  */}
+          <table cellPadding="0" cellSpacing="0">
             <tr>
-              <td colSpan="4" style={{textAlign:"center"}}>Torso / Abdomen</td>
+              <td colSpan="4" style={{textAlign:"center"}}><h2>Torso / Abdomen</h2></td>
+            </tr>
+            <tr>
+              <td><strong>Block</strong></td>
+              <td><strong>RVU</strong></td>
+              <td><strong>Medicare 2020</strong></td>
+              <td><strong>Medicare 2021 presumed</strong></td>
             </tr>
             <tr>
               <td>Serratus Anterior Block</td>
@@ -526,9 +561,17 @@ function BasicScreen() {
               <td>$63.16</td>
               <td>$58.42</td>
             </tr>
+          </table>
 {/*  */}
+          <table cellPadding="0" cellSpacing="0">
             <tr>
-              <td colSpan="4" style={{textAlign:"center"}}>Lower Extremity</td>
+              <td colSpan="4" style={{textAlign:"center"}}><h2>Lower Extremity</h2></td>
+            </tr>
+            <tr>
+              <td><strong>Block</strong></td>
+              <td><strong>RVU</strong></td>
+              <td><strong>Medicare 2020</strong></td>
+              <td><strong>Medicare 2021 presumed</strong></td>
             </tr>
             <tr>
               <td>Fascia Iliaca Block</td>
@@ -566,9 +609,17 @@ function BasicScreen() {
               <td>$44.39</td>
               <td>$41.06</td>
             </tr>
+          </table>
 {/*  */}
+          <table cellPadding="0" cellSpacing="0">
             <tr>
-              <td colSpan="4" style={{textAlign:"center"}}>Joint or Bursa Injections<p className="accordion-content--reference">* Same code and reimbursement for the physician regardless of injection or aspiration or agent injecting into the joint</p></td>
+              <td colSpan="4" style={{textAlign:"center"}}><h2>Joint or Bursa Injections</h2><p className="accordion-content--reference">* Same code and reimbursement for the physician regardless of injection or aspiration or agent injecting into the joint</p></td>
+            </tr>
+            <tr>
+              <td><strong>Block</strong></td>
+              <td><strong>RVU</strong></td>
+              <td><strong>Medicare 2020</strong></td>
+              <td><strong>Medicare 2021 presumed</strong></td>
             </tr>
             <tr>
               <td>Knees, Hip, Shoulder</td>
@@ -594,9 +645,17 @@ function BasicScreen() {
               <td>$54.86</td>
               <td>$0.74</td>
             </tr>
+          </table>
 {/*  */}
+          <table cellPadding="0" cellSpacing="0">
             <tr>
-              <td colSpan="4" style={{textAlign:"center"}}>Trigger Point Injections</td>
+              <td colSpan="4" style={{textAlign:"center"}}><h2>Trigger Point Injections</h2></td>
+            </tr>
+            <tr>
+              <td><strong>Block</strong></td>
+              <td><strong>RVU</strong></td>
+              <td><strong>Medicare 2020</strong></td>
+              <td><strong>Medicare 2021 presumed</strong></td>
             </tr>
             <tr>
               <td>Injection 1 or 2 named muscles</td>
@@ -622,9 +681,17 @@ function BasicScreen() {
               <td>$62.07</td>
               <td>$57.41</td>
             </tr>
+          </table>
 {/*  */}
+          <table cellPadding="0" cellSpacing="0">
             <tr>
-              <td colSpan="4" style={{textAlign:"center"}}>Hematoma Blocks<p className="accordion-content--reference">* If the hematoma is in a joint, you would use the arthrocentesis code. If it is in the shaft, you could use the other peripheral nerve code</p></td>
+              <td colSpan="4" style={{textAlign:"center"}}><h2>Hematoma Blocks</h2><p className="accordion-content--reference">* If the hematoma is in a joint, you would use the arthrocentesis code. If it is in the shaft, you could use the other peripheral nerve code</p></td>
+            </tr>
+            <tr>
+              <td><strong>Block</strong></td>
+              <td><strong>RVU</strong></td>
+              <td><strong>Medicare 2020</strong></td>
+              <td><strong>Medicare 2021 presumed</strong></td>
             </tr>
             <tr>
               <td>Wrist</td>
@@ -644,10 +711,17 @@ function BasicScreen() {
               <td>33.98</td>
               <td>$57.41</td>
             </tr>
+          </table>
 {/*  */}
+          <table cellPadding="0" cellSpacing="0">
             <tr>
-              <td colSpan="4" style={{textAlign:"center"}}>ULTRASOUND for nerve blocks
-              Note: most insurers and Medicare decrease the second and subsequent procedures performed on the same day by 50-75% reimbursement of the fee schedule.</td>
+              <td colSpan="4" style={{textAlign:"center"}}><h2>ULTRASOUND for nerve blocks</h2></td>
+            </tr>
+            <tr>
+              <td><strong>Block</strong></td>
+              <td><strong>RVU</strong></td>
+              <td><strong>Medicare 2020</strong></td>
+              <td><strong>Medicare 2021 presumed</strong></td>
             </tr>
             <tr>
               <td>US for nerve block</td>
@@ -660,9 +734,6 @@ function BasicScreen() {
                 <p><strong>Note: </strong>most insurers and Medicare decrease the second and subsequent procedures performed on the same day by 50-75% reimbursement of the fee schedule.</p>
               </td>
             </tr>
-
-
-
           </table>
           
         </div>

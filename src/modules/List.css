@@ -1,5 +1,5 @@
 .list {
-  height: calc(100vh - 133px);
+  height: calc(100vh - 200px);
   overflow: hidden;
   padding:0!important;
 }

@@ -29,8 +29,9 @@ function App() {
   };
 
   // Device check
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
   
+  console.log('isMobile', isMobile)
 
 
 
@@ -38,21 +39,24 @@ function App() {
     
     <div className="App" id={isDarkMode ? "dark" : "light"}>
       {/* Logo header */}
-      { isMobile ? 
+      {/* { isMobile ? 
       <div className="header">
         <p className="logo">Advanced Analgesia</p>
       </div>
-      : null }
+      : null } */}
+      <div className="header">
+        <p className="logo">Advanced Analgesia</p>
+      </div>
       
 
 
       {/* Content */}
-      { isMobile ? 
+      {/* { isMobile ? 
       <Content />
       :
       <NonMobile /> 
-      }
-      {/* <Content /> */}
+      } */}
+      <Content />
       
 
 
@@ -70,7 +74,7 @@ function App() {
       {/* {isMobile ? 
       <MobileBottomNav />
       : null} */}
-      {/* <MobileBottomNav /> */}
+      <MobileBottomNav />
       
       
     </div>

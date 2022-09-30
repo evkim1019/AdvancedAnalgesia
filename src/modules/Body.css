@@ -37,6 +37,20 @@
   stroke: #9fb4bd!important;
   stroke-width:2px;
 }
+.body--frame {
+  width: calc(100vw - 40px);
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#light .body--frame {
+  background-image: url("../illustrations/bodyOutline.png");
+}
+#dark .body--frame {
+  background-image: url("../illustrations/bodyOutline-darkmode.png");
+  opacity: 0.5;
+}
  
 
 
@@ -65,7 +79,7 @@
   opacity: 0.2;
 }
 .selectionWrapper .selectedPart {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 

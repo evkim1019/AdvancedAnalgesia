@@ -98,10 +98,9 @@ function Body() {
       {/* Show Body */}
       {contentDisplay[0].value ? 
       <div className="illustrationWrapper bodyOutlineSvg">
-        {/* <BoldBodyOutline className="body--outline-bold" /> */}
-        <img src={bodyOutline} className="body--outline" alt="" />
-        {/* <BodyOutline className="body--outline" /> */}
-        {/* <img src={BodyOutline} alt="" /> */}
+        {/* <img src={bodyOutline} className="body--outline" alt="" /> */}
+        <div className="body--frame"></div>
+        
         <div className="selectionWrapper">
 
           <img src={armsImg} className={`body--arms svgImg ${selectedSection[2].value ? 'selectedPart' : 'nonSelectedPart'}`} onClick={() => handleSelectionToggle({ selectedSection, setSeletedSection})("arms")} />

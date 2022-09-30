@@ -7,6 +7,12 @@
 .accordion-title {
   padding: 20px 0;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+.accordion-title h2 {
+  padding-left: 10px;
 }
 #light .accordion-title--selected {
   color: #9a6413;
@@ -52,17 +58,47 @@
   display: block;
   padding-top: 10px;
 }
+.accordion-content--tableWrapper {
+  width: 100%;
+  overflow: auto;
+  scroll-behavior: auto;
+}
+.tableWidth-150 {
+  width: 150%;
+}
+.tdWidth-70 {
+  min-width: 100px!important;
+}
 .accordion-content table {
   table-layout: auto;
-  border: 1px solid #ccc;
   min-width: 100%;
-  font-size: 0.8em;
+  /* width: 150%; */
+  font-size: 0.75em;
+  /* margin: 5px 0; */
+}
+#light .accordion-content table {
+  border: 1px solid #005c73;
+}
+#dark .accordion-content table {
+  border: 1px solid #E7B06D;
+}
+.accordion-content table tr:first-child td{
+  font-weight:bold;
+}
+#light .accordion-content table tr:first-child td{
+  background-color: #005c73;
+  color: #f7f7f7;
+}
+#dark .accordion-content table tr:first-child td{
+  background-color: #E7B06D;
+  color: #1f2b2f;
 }
 .accordion-content table td {
   padding: 5px;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-collapse: collapse;
+  min-width: 55px;
 }
 .accordion-content table tr:last-child td {
   border-bottom: none;
@@ -76,6 +112,9 @@
 .accordion-content--reference {
   font-size: 0.8em;
   font-style: italic;
+}
+.accordion-content--reference > p {
+  font-weight: bold;
 }
 
 
