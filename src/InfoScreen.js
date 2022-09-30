@@ -89,7 +89,7 @@ function InfoScreen() {
           Contact
         </h1>
         <p>If you have any concerns, questions, or messages, please contact us to <strong>advanced.analgesia@gmail.com</strong>.</p><br />
-        <a href="emailto:advanced.analgesia@gmail.com" className="button-full">Email us</a>
+        <a href="mailto:advanced.analgesia@gmail.com" className="button-full">Email us</a>
       </div>
 
 
