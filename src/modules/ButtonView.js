@@ -27,7 +27,7 @@ function ButtonView() {
           </div>
           
           <div>
-            <h2>Head</h2>
+            <h2>Head and Neck</h2>
             <KeyboardArrowRightRoundedIcon />
           </div>
           </>

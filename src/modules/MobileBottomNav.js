@@ -4,7 +4,7 @@ import './MobileBottomNav.css'
 // icons
 import AccessibilityNewRoundedIcon from '@mui/icons-material/AccessibilityNewRounded';
 import StickyNote2OutlinedIcon from '@mui/icons-material/StickyNote2Outlined';
-import SortByAlphaOutlinedIcon from '@mui/icons-material/SortByAlphaOutlined';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import { Link, useParams } from 'react-router-dom';
 
@@ -53,8 +53,8 @@ function MobileBottomNav() {
         </Link>
 
         <Link to='/list' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('three')} className={`mobileBottomNav--item mobileBottomNav--itemThree ${selectedNav[2].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
-          <SortByAlphaOutlinedIcon />
-          <p>List</p>
+          <SearchRoundedIcon />
+          <p>Search</p>
         </Link>
 
         <Link to='/info' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('four')}  className={`mobileBottomNav--item mobileBottomNav--itemFour ${selectedNav[3].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
