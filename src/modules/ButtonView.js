@@ -20,7 +20,7 @@ function ButtonView() {
         </div>
         
 
-        <a href={`/headneck`} className="button">
+        <Link to={`/headneck`} className="button">
           <>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--headneck"></div>
@@ -31,9 +31,9 @@ function ButtonView() {
             <KeyboardArrowRightRoundedIcon />
           </div>
           </>
-        </a>
+        </Link>
 
-        <a href={`/torso`} className="button">
+        <Link to={`/torso`} className="button">
           <>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--torso"></div>
@@ -44,9 +44,9 @@ function ButtonView() {
             <KeyboardArrowRightRoundedIcon />
           </div>
           </>
-        </a>
+        </Link>
 
-        <a href={`/upperextremities`} className="button">
+        <Link to={`/upperextremities`} className="button">
           <>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--upper"></div>
@@ -57,9 +57,9 @@ function ButtonView() {
             <KeyboardArrowRightRoundedIcon />
           </div>
           </>
-        </a>
+        </Link>
 
-        <a href={`/lowerextremities`} className="button">
+        <Link to={`/lowerextremities`} className="button">
           <>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--lower"></div>
@@ -69,7 +69,7 @@ function ButtonView() {
             <KeyboardArrowRightRoundedIcon />
           </div>
           </>
-        </a>
+        </Link>
 
         {/* <a className="button">
           <>
