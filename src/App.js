@@ -39,24 +39,24 @@ function App() {
     
     <div className="App" id={isDarkMode ? "dark" : "light"}>
       {/* Logo header */}
-      {/* { isMobile ? 
+      { isMobile ? 
       <div className="header">
         <p className="logo">Advanced Analgesia</p>
       </div>
-      : null } */}
-      <div className="header">
+      : null }
+      {/* <div className="header">
         <p className="logo">Advanced Analgesia</p>
-      </div>
+      </div> */}
       
 
 
       {/* Content */}
-      {/* { isMobile ? 
+      { isMobile ? 
       <Content />
       :
       <NonMobile /> 
-      } */}
-      <Content />
+      }
+      {/* <Content /> */}
       
 
 
@@ -71,10 +71,10 @@ function App() {
       
       
       {/* Bottom navigation */}
-      {/* {isMobile ? 
+      {isMobile ? 
       <MobileBottomNav />
-      : null} */}
-      <MobileBottomNav />
+      : null}
+      {/* <MobileBottomNav /> */}
       
       
     </div>
