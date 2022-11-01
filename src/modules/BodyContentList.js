@@ -23,7 +23,7 @@ function BodyContentList(props) {
       
       { params.bodyDetailList === "headneck" ?
       <div className="bodyContentList--wrapper">
-        <Link to="/">Back</Link>
+        <Link to="/" className="bodyContentList-back">Back</Link>
         <div className="bodyContentList--pageTitle"><h1>Head & Neck</h1></div>
         {headneckDB.map(el => {
           return (
@@ -42,7 +42,7 @@ function BodyContentList(props) {
 
       { params.bodyDetailList === "torso" ?
       <div className="bodyContentList--wrapper">
-        <Link to="/">Back</Link>
+        <Link to="/" className="bodyContentList-back">Back</Link>
         <div className="bodyContentList--pageTitle"><h1>Torso</h1></div>
         {torsoDB.map(el => {
           return (
@@ -61,7 +61,7 @@ function BodyContentList(props) {
 
       { params.bodyDetailList === "upperextremities" ?
       <div className="bodyContentList--wrapper">
-        <Link to="/">Back</Link>
+        <Link to="/" className="bodyContentList-back">Back</Link>
         <div className="bodyContentList--pageTitle"><h1>Upper Extermities</h1></div>
         {upperExtDB.map(el => {
           return (
@@ -80,7 +80,7 @@ function BodyContentList(props) {
 
       { params.bodyDetailList === "lowerextremities" ?
       <div className="bodyContentList--wrapper">
-        <Link to="/">Back</Link>
+        <Link to="/" className="bodyContentList-back">Back</Link>
         <div className="bodyContentList--pageTitle"><h1>Lower Extermities</h1></div>
         {lowerExtDB.map(el => {
           return (

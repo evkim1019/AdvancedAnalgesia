@@ -17,8 +17,14 @@
 .bodyContentList--wrapper {
   padding-bottom: 100px;
 }
+.bodyContentList-back {
+  display:block;
+  text-align:center;
+  margin-top:15px;
+}
 .bodyContentList--pageTitle{
   padding-bottom: 40px;
+  text-align:center;
 }
 .bodyContentList--item {
   /* padding: 10px 0; */

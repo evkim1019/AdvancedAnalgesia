@@ -3,9 +3,18 @@
 }
 .contentDetailContainer {
   padding-bottom: 100px;
+  margin-top: 15px
 }
 .contentDetailContainer h1 {
   margin-bottom:30px;
+}
+.contentDetailContainer-back{
+  margin-top:15px;
+  display:block;
+  text-align:center;
+}
+.contentDetailContainer-title {
+  text-align:center;
 }
 .contentDetail--section-content {
   word-break: break-word;

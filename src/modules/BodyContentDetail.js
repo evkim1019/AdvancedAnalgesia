@@ -85,13 +85,13 @@ function BodyContentDetail() {
       </div>
     :
       <div className="contentDetailContainer">
-        <Link to={`${pathCategory}`}>
+        <Link to={`${pathCategory}`} className="contentDetailContainer-back">
           {pathCategory === 'headneck' ? " Head and Neck " : null }
           {pathCategory === 'torso' ? " Torso " : null }
           {pathCategory === 'upperextremities' ? " Upper Extremities " : null }
           {pathCategory === 'lowerextremities' ? " Lower Extremities " : null }
         </Link>
-        <h1>{pathContent.name}</h1>
+        <h1 className="contentDetailContainer-title">{pathContent.name}</h1>
 
 
         {/* Videos */}
