@@ -5,6 +5,8 @@ import InfoScreen from '../InfoScreen'
 import Body from './Body'
 import BodyContentDetail from './BodyContentDetail'
 import BodyContentList from './BodyContentList'
+import ButtonView from './ButtonView'
+import CardView from './CardView'
 
 import './Content.css'
 import List from './List'
@@ -18,7 +20,8 @@ function Content() {
     <div className="content">
 
       { pathname === '/' ?
-      <Body />
+      // <Body />
+      <ButtonView />
       : null}
       { Object.keys(params)[0] === 'bodyDetailList' && Object.values(params)[0] !== 'basics' && Object.values(params)[0] !== 'list' && Object.values(params)[0] !== 'info' ?
       <BodyContentList />

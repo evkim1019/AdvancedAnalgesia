@@ -1,0 +1,12 @@
+.cardView {
+  overflow: hidden;
+  height: auto!important;
+}
+.cardWrapper {
+  position:relative;
+  margin:0 auto;
+  margin-bottom: 20px;
+  height: 60vh;
+  overflow:hidden;
+  width: fit-content;
+}
