@@ -17,7 +17,7 @@
   color: #005c73;
 }
 #dark {
-  background-color: #1f2b2f;
+  background-color: #212628;
   color: #efefef;
 }
 a {
@@ -52,8 +52,8 @@ p, li {
   color: #fff;
 }
 #dark .button-full {
-  background-color:#05E6E1;
-  color: #013d4c;
+  background-color: #0c6c82;
+  color: #efefef;
 }
 .button-disabled {
   opacity: 0.4;

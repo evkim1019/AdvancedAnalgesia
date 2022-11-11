@@ -9,7 +9,7 @@
 }
 #dark #mobileBottomNav {
   border-top: 1px solid #666;
-  background-color: #1f2b2f;
+  background-color: #212628;
 }
 #light #mobileBottomNav {
   border-top: 1px solid #ccc;
@@ -37,20 +37,20 @@
   padding-top: 13px;
 }
 #light .bottomNavActive {
-  border-top: 4px solid #005c73;
-  color:#9a6413;
+  border-top: 4px solid #212628;
+  color:#212628;
 }
 #dark .bottomNavActive {
-  border-top: 4px solid #D2FAFB;
-  color:#E7B06D;
+  border-top: 4px solid #efefef;
+  color:#efefef;
 }
 #light .bottomNavInactive {
   border-top: none;
-  color:#005c73;
+  color:#748e9b;
 }
 #dark .bottomNavInactive {
   border-top: none;
-  color:#EFEFD7;
+  color: #748e9b;
 }
 
 
