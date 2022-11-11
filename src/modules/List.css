@@ -66,13 +66,13 @@
   position: -webkit-sticky;
   top: 0;
 }
-#light .listSubHeadline {
+/* #light .listSubHeadline {
   background-color: #005c73;
   color: #efefef;
 }
 #dark .listSubHeadline {
   background-color: #604a2a;
-}
+} */
 .listWrap li, .listWrap a{
   padding: 15px 10px;
   display:flex;

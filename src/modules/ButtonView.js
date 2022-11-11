@@ -19,54 +19,57 @@ function ButtonView() {
           <p>Select a button</p>
         </div>
         
-
-        <Link to={`/headneck`} className="button">
+        <Link to={`/basics`} className="button color-intro">
           <>
+          <div className="buttonView_text">
+            <h2>Introduction</h2>
+          </div>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--headneck"></div>
           </div>
-          
-          <div>
+          </>
+        </Link>
+
+        <Link to={`/headneck`} className="button color-headneck">
+          <>
+          <div className="buttonView_text">
             <h2>Head and Neck</h2>
-            <KeyboardArrowRightRoundedIcon />
+          </div>
+          <div className="buttonView_thumbWrapper">
+            <div className="buttonView_thumb buttonView_thumb--headneck"></div>
           </div>
           </>
         </Link>
 
-        <Link to={`/torso`} className="button">
+        <Link to={`/torso`} className="button color-torso">
           <>
+          <div className="buttonView_text">
+            <h2>Torso</h2>
+          </div>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--torso"></div>
           </div>
-          
-          <div>
-            <h2>Torso</h2>
-            <KeyboardArrowRightRoundedIcon />
-          </div>
           </>
         </Link>
 
-        <Link to={`/upperextremities`} className="button">
+        <Link to={`/upperextremities`} className="button color-upper">
           <>
+          <div className="buttonView_text">
+            <h2>Upper Extermities</h2>
+          </div>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--upper"></div>
           </div>
-          
-          <div>
-            <h2>Upper Extermities</h2>
-            <KeyboardArrowRightRoundedIcon />
-          </div>
           </>
         </Link>
 
-        <Link to={`/lowerextremities`} className="button">
+        <Link to={`/lowerextremities`} className="button color-lower">
           <>
+          <div className="buttonView_text">
+            <h2>Lower Extermities</h2>
+          </div>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--lower"></div>
-          </div>
-          <div>
-            <h2>Lower Extermities</h2>
-            <KeyboardArrowRightRoundedIcon />
           </div>
           </>
         </Link>

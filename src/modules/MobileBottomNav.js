@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './MobileBottomNav.css'
 
 // icons
-import AccessibilityNewRoundedIcon from '@mui/icons-material/AccessibilityNewRounded';
+// import AccessibilityNewRoundedIcon from '@mui/icons-material/AccessibilityNewRounded';
+import CabinRoundedIcon from '@mui/icons-material/CabinRounded';
 import StickyNote2OutlinedIcon from '@mui/icons-material/StickyNote2Outlined';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
@@ -43,14 +44,14 @@ function MobileBottomNav() {
       <div className="mobileBottomNav--wrapper smallText">
 
         <Link to='/' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('one')} className={`mobileBottomNav--item mobileBottomNav--itemOne ${selectedNav[0].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
-          <AccessibilityNewRoundedIcon />
-          <p>Body</p>
+          <CabinRoundedIcon />
+          <p>Home</p>
         </Link>
         
-        <Link to='/basics' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('two')} className={`mobileBottomNav--item mobileBottomNav--itemTwo ${selectedNav[1].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
+        {/* <Link to='/basics' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('two')} className={`mobileBottomNav--item mobileBottomNav--itemTwo ${selectedNav[1].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
           <StickyNote2OutlinedIcon />
           <p>Basics</p>
-        </Link>
+        </Link> */}
 
         <Link to='/list' onClick={() => bottomNavSelectToggle({selectedNav, setSelectedNav})('three')} className={`mobileBottomNav--item mobileBottomNav--itemThree ${selectedNav[2].value === true ? 'bottomNavActive' : 'bottomNavInactive'}`}>
           <SearchRoundedIcon />

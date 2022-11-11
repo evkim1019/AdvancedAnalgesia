@@ -86,7 +86,7 @@ function List() {
 
         { listHead.length >= 1 ? 
         <>
-        <div className="listSubHeadline">
+        <div className="listSubHeadline color-headneck">
           <h2>Head and Neck</h2>
         </div>
         <ul>
@@ -100,7 +100,7 @@ function List() {
 
         {listTorso.length >= 1 ? 
         <>
-        <div className="listSubHeadline">
+        <div className="listSubHeadline color-torso">
           <h2>Torso</h2>
         </div>
         <ul>
@@ -114,7 +114,7 @@ function List() {
 
         {listUpperExtremity.length >= 1 ? 
         <>
-        <div className="listSubHeadline">
+        <div className="listSubHeadline color-upper">
           <h2>Upper Extremity</h2>
         </div>
         <ul>
@@ -128,7 +128,7 @@ function List() {
 
         { listLowerExtremity.length >= 1 ? 
         <>
-        <div className="listSubHeadline">
+        <div className="listSubHeadline color-lower">
           <h2>Lower Extremity</h2>
         </div>
         <ul>
