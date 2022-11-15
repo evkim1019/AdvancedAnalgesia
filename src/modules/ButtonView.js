@@ -25,7 +25,7 @@ function ButtonView() {
             <h2>Introduction</h2>
           </div>
           <div className="buttonView_thumbWrapper">
-            <div className="buttonView_thumb buttonView_thumb--headneck"></div>
+            <div className="buttonView_thumb"></div>
           </div>
           </>
         </Link>
@@ -55,7 +55,7 @@ function ButtonView() {
         <Link to={`/upperextremities`} className="button color-upper">
           <>
           <div className="buttonView_text">
-            <h2>Upper Extermities</h2>
+            <h2>Upper Extremities</h2>
           </div>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--upper"></div>
@@ -66,7 +66,7 @@ function ButtonView() {
         <Link to={`/lowerextremities`} className="button color-lower">
           <>
           <div className="buttonView_text">
-            <h2>Lower Extermities</h2>
+            <h2>Lower Extremities</h2>
           </div>
           <div className="buttonView_thumbWrapper">
             <div className="buttonView_thumb buttonView_thumb--lower"></div>

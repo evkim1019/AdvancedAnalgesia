@@ -5,6 +5,7 @@
 .landingGuide {
   padding: 10px;
   text-align:center;
+  opacity: 0.7;
 }
 .buttonWrapper {
   position:relative;
@@ -71,7 +72,7 @@
 
 
 .button .buttonView_thumbWrapper {
-  width: 80px;
+  width: 50px;
   text-align:center;
   height: calc(100% - 10px);
   line-height: 75px;
@@ -90,7 +91,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 100px);
+  width: calc(100% - 70px);
 }
 .button .buttonView_text h2 {
   text-decoration:none;
@@ -107,30 +108,18 @@
   background-repeat: no-repeat;
   height: 100%;
 }
-#light .buttonView_thumb--headneck {
-  background-image: url('../illustrations/thumbHeadNeck.png');
-}
-#dark .buttonView_thumb--headneck {
-  background-image: url('../illustrations/tumbHeadNeck-dark.png');
+.buttonView_thumb--headneck {
+  background-image: url('../illustrations/mainButton-headneck.png');
 }
 
-#light .buttonView_thumb--torso {
-  background-image: url('../illustrations/thumbTorso.png');
-}
-#dark .buttonView_thumb--torso {
-  background-image: url('../illustrations/thumbTorso-dark.png');
+.buttonView_thumb--torso {
+  background-image: url('../illustrations/mainButton-torso.png');
 }
 
-#light .buttonView_thumb--upper {
-  background-image: url('../illustrations/thumbUpper.png');
-}
-#dark .buttonView_thumb--upper {
-  background-image: url('../illustrations/thumbUpper-dark.png');
+.buttonView_thumb--upper {
+  background-image: url('../illustrations/mainButton-arm.png');
 }
 
-#light .buttonView_thumb--lower {
-  background-image: url('../illustrations/thumbLower.png');
-}
-#dark .buttonView_thumb--lower {
-  background-image: url('../illustrations/thumbLower-dark.png');
+.buttonView_thumb--lower {
+  background-image: url('../illustrations/mainButton-legs.png');
 }
