@@ -119,6 +119,7 @@ p, li {
 }
 .desktopStyleOnly .button-full {
   max-width: 300px;
+  margin: 0 auto;
 }
 .desktopStyleOnly .content {
   width:calc(100% - 300px);
@@ -186,4 +187,9 @@ p, li {
 .desktopStyleOnly .bodyContentList-back, .desktopStyleOnly .contentDetailContainer-back {
   margin-bottom:10px;
   text-align:left;
+}
+
+/* Cursor pointer adjustment */
+.desktopStyleOnly .content .accordion-title:hover {
+  cursor: pointer;
 }
