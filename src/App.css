@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#darkModeToggle svg {
   opacity: .3;
 }
 #light {
@@ -108,4 +110,80 @@ p, li {
 
 
 
+/*  */
+/*  */
+/* Desktop style only for side navigation */
+.desktopStyleOnly {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.desktopStyleOnly .button-full {
+  max-width: 300px;
+}
+.desktopStyleOnly .content {
+  width:calc(100% - 300px);
+  min-height: calc(100vh - 40px);
+}
+.desktopStyleOnly .listWrapper-box {
+  left: auto;
+  right: auto;
+  width: auto;
+}
 
+.sideNavWrapper {
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  background-color: #fff;
+}
+#light .sideNavWrapper {
+  border-right: 1px solid #005c73;
+  background-color: #fff;
+}
+#dark .sideNavWrapper {
+  border-right: 1px solid #0c6c82;
+  background-color: #111;
+}
+.sideNavWrapper #darkModeToggle {
+  position: unset;
+  align-items: flex-start;
+  padding: 20px;
+  flex-direction: inherit;
+  opacity: 0.7;
+}
+.sideNavWrapper #darkModeToggle::after {
+  content: "Dark Mode ON/OFF";
+  padding-left: 5px;
+}
+
+.desktopStyleOnly .listSearch {
+  padding-top: 60px;
+}
+.desktopStyleOnly .listWrapper-box {
+  height: 100vh;
+}
+.desktopStyleOnly .listWrap {
+  padding-bottom: 0;
+}
+.desktopStyleOnly .listWrapper-box {
+  width: calc(100% - 300px);
+  max-width: 850px;
+}
+
+
+
+/* Content size and top padding */
+.desktopStyleOnly .content > * {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.desktopStyleOnly .bodyContentList, .desktopStyleOnly .contentDetail {
+  margin-top: 50px;
+}
+.desktopStyleOnly .basicScreen {
+  margin-top: 70px;
+}
+.desktopStyleOnly .bodyContentList-back, .desktopStyleOnly .contentDetailContainer-back {
+  margin-bottom:10px;
+  text-align:left;
+}

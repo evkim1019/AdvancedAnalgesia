@@ -11,6 +11,7 @@ import logo from './logo.svg';
 import './App.css';
 import './modules/MobileBottomNav.css'
 import NonMobile from './modules/NonMobile';
+import DesktopSideNav from './modules/DesktopSideNav';
 
 
 
@@ -50,17 +51,8 @@ function App() {
       
 
 
-      {/* Content */}
-      { isMobile ? 
-      <Content />
-      :
-      <NonMobile /> 
-      }
-      {/* <Content /> */}
-      
-
-
       {/* Dark mode toggle */}
+      { isMobile ? 
       <div id="darkModeToggle">
         <DarkModeSwitch
           checked={isDarkMode}
@@ -68,13 +60,52 @@ function App() {
           size={20}
         />
       </div>
+      : null }
       
-      
-      {/* Bottom navigation */}
-      {isMobile ? 
+
+      { isMobile ?
+      <Content />
+      : null }
+      { isMobile ?
       <MobileBottomNav />
-      : null}
-      {/* <MobileBottomNav /> */}
+      : null }
+      
+
+      { isMobile ?
+      null :
+      <div className="desktopStyleOnly">
+        {/* Content */}
+        {/* { isMobile ? 
+        <Content />
+        :
+        <NonMobile /> 
+        } */}
+        <Content />
+        
+        
+        {/* Bottom navigation */}
+        {isMobile ? 
+        <MobileBottomNav />
+        : 
+        <div className="sideNavWrapper">
+          <div className="header">
+            <p className="logo">Advanced Analgesia</p>
+          </div>
+          <DesktopSideNav />
+          <div id="darkModeToggle" onClick={()=> toggleDarkMode()}>
+            <DarkModeSwitch
+              checked={isDarkMode}
+              onChange={toggleDarkMode}
+              size={20}
+            />
+          </div>
+        </div>
+        }
+        {/* <MobileBottomNav /> */}
+      </div>
+      }
+      
+      
       
       
     </div>

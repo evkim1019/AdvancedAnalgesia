@@ -1,0 +1,54 @@
+#desktopSideNav {
+  width: 300px;
+  padding-top: 20px;
+}
+#light .sideNavActive {
+  background-color: #ededed;
+  color: #9a6413;
+}
+#dark .sideNavActive {
+  background-color: #212628;
+  color: #E7B06D;
+}
+.sideNavActive > p::after {
+  content: ">"
+}
+.desktopSideNav--item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+#light .desktopSideNav--item {
+  border-bottom: 1px solid #ccc;
+}
+#dark .desktopSideNav--item {
+  border-bottom: 1px solid #666;
+}
+.desktopSideNav--item:last-child {
+  border: 0;
+}
+.desktopSideNav--item svg {
+  opacity: 0.4;
+}
+.desktopSideNav--item p {
+  padding-left: 10px;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* Nested navigation */
+#light .sideSubNavWrapper {
+  border-left: 10px solid #ccc;
+}
+#dark .sideSubNavWrapper {
+  border-left: 10px solid #666;
+}
+.sideSubNavWrapper .desktopSideNav--item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
