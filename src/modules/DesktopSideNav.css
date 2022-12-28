@@ -52,3 +52,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.sideSubNavWrapper .desktopSideNav--item p {
+  font-size: 1.1rem;
+}

@@ -56,19 +56,19 @@ function DesktopSideNav() {
         {/* Home sub nav */}
         <div className="sideSubNavWrapper">
           <Link to='/basics' onClick={() => sideNavSelectToggle({selectedNav, setSelectedNav})('intro')} className={`desktopSideNav--item ${selectedNav[4].value === true ? 'sideNavActive' : 'sideNavInactive'}`}>
-            <p>• Introduction</p>
+            <p>Introduction</p>
           </Link>
           <Link to='/headneck' onClick={() => sideNavSelectToggle({selectedNav, setSelectedNav})('headneck')} className={`desktopSideNav--item ${selectedNav[5].value === true ? 'sideNavActive' : 'sideNavInactive'}`}>
-            <p>• Head and Neck</p>
+            <p>Head and Neck</p>
           </Link>
           <Link to='/torso' onClick={() => sideNavSelectToggle({selectedNav, setSelectedNav})('torso')} className={`desktopSideNav--item ${selectedNav[6].value === true ? 'sideNavActive' : 'sideNavInactive'}`}>
-            <p>• Torso</p>
+            <p>Torso</p>
           </Link>
           <Link to='/upperextremities' onClick={() => sideNavSelectToggle({selectedNav, setSelectedNav})('upperextremities')} className={`desktopSideNav--item ${selectedNav[7].value === true ? 'sideNavActive' : 'sideNavInactive'}`}>
-            <p>• Upper Extermities</p>
+            <p>Upper Extermities</p>
           </Link>
           <Link to='/lowerextremities' onClick={() => sideNavSelectToggle({selectedNav, setSelectedNav})('lowerextremities')} className={`desktopSideNav--item ${selectedNav[8].value === true ? 'sideNavActive' : 'sideNavInactive'}`}>
-            <p>• Lower Extermities</p>
+            <p>Lower Extermities</p>
           </Link>
         </div>
         
