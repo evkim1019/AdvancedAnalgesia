@@ -1,17 +1,17 @@
 .buttonView {
   overflow: hidden;
-  height: auto!important;
+  height: auto !important;
 }
 .landingGuide {
   padding: 10px;
-  text-align:center;
+  text-align: center;
   opacity: 0.7;
 }
 .buttonWrapper {
-  position:relative;
-  margin:0 auto;
+  position: relative;
+  margin: 0 auto;
   height: 73vh;
-  overflow:hidden;
+  overflow: hidden;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
   align-items: center;
   border-radius: 4px;
   text-decoration: none;
-  overflow:hidden;
+  overflow: hidden;
 }
 #light .color-intro {
   background-color: #c5a89e;
@@ -48,6 +48,10 @@
   background-color: #5f1f15;
   color: #efefef;
 }
+#light .color-other {
+  background-color: #7b8b99;
+  color: #efefef;
+}
 
 #dark .color-intro {
   background-color: #8c7a74;
@@ -58,7 +62,7 @@
   color: #efefef;
 }
 #dark .color-torso {
-  background-color: #AA833C;
+  background-color: #aa833c;
   color: #efefef;
 }
 #dark .color-upper {
@@ -69,21 +73,24 @@
   background-color: #67443f;
   color: #efefef;
 }
-
+#dark .color-other {
+  background-color: #7b8b99;
+  color: #efefef;
+}
 
 .button .buttonView_thumbWrapper {
   width: 50px;
-  text-align:center;
+  text-align: center;
   height: calc(100% - 10px);
   line-height: 75px;
   padding: 5px;
 }
 .buttonView_thumbWrapper {
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 .button .buttonView_thumbWrapper img {
-  max-width:100%;
+  max-width: 100%;
   max-height: 100%;
 }
 .button .buttonView_text {
@@ -94,32 +101,30 @@
   width: calc(100% - 70px);
 }
 .button .buttonView_text h2 {
-  text-decoration:none;
+  text-decoration: none;
 }
 .button .buttonView_text svg {
-  opacity: .4;
+  opacity: 0.4;
 }
 
-
-
-.buttonView_thumb{
-  background-size:contain;
+.buttonView_thumb {
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
 }
 .buttonView_thumb--headneck {
-  background-image: url('../illustrations/mainButton-headneck.png');
+  background-image: url("../illustrations/mainButton-headneck.png");
 }
 
 .buttonView_thumb--torso {
-  background-image: url('../illustrations/mainButton-torso.png');
+  background-image: url("../illustrations/mainButton-torso.png");
 }
 
 .buttonView_thumb--upper {
-  background-image: url('../illustrations/mainButton-arm.png');
+  background-image: url("../illustrations/mainButton-arm.png");
 }
 
 .buttonView_thumb--lower {
-  background-image: url('../illustrations/mainButton-legs.png');
+  background-image: url("../illustrations/mainButton-legs.png");
 }

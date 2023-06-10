@@ -1,10 +1,10 @@
 /* GLOBAL STYLE */
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 #darkModeToggle {
-  position:absolute;
+  position: absolute;
   right: 20px;
   top: 20px;
   display: flex;
@@ -12,7 +12,7 @@
   align-items: center;
 }
 #darkModeToggle svg {
-  opacity: .3;
+  opacity: 0.3;
 }
 #light {
   background-color: #f7f7f7;
@@ -25,32 +25,35 @@
 a {
   color: inherit;
 }
-p, li {
+p {
   line-height: 1.4;
 }
-
-
-
-
+li {
+  line-height: 1.2;
+}
+img {
+  max-width: 100%;
+}
 
 /* Typography */
 .smallText {
-  font-size: 11px;
+  /* font-size: 11px; */
 }
 
 /* Asset styles */
-.button-full, .button-full-secondary {
+.button-full,
+.button-full-secondary {
   padding: 15px 0;
-  font-weight:bolder;
+  font-weight: bolder;
   margin: 0 10px;
-  text-align:center;
+  text-align: center;
   border-radius: 4px;
   text-decoration: none;
-  display:block;
+  display: block;
   width: calc(100% - 20px);
 }
 #light .button-full {
-  background-color:#005c73;
+  background-color: #005c73;
   color: #fff;
 }
 #dark .button-full {
@@ -60,41 +63,34 @@ p, li {
 .button-disabled {
   opacity: 0.4;
 }
-.button-underlined{
+.button-underlined {
   text-decoration: underline;
 }
 
 #light .button-full-secondary {
-  border:1px solid #005c73;
+  border: 1px solid #005c73;
   color: #013d4c;
 }
 #dark .button-full-secondary {
-  border: 1px solid #05E6E1;
+  border: 1px solid #05e6e1;
   color: #fff;
 }
 
 .float-bottom {
-  position:fixed;
+  position: fixed;
   bottom: 85px;
   width: calc(100vw - 100px);
 }
-
-
 
 .App {
   /* min-height: calc(100vh - 75px); */
 }
 
-
-
-
-
-
 /* Header */
 .header {
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
 }
 .header .logo {
   font-size: 12px;
@@ -106,9 +102,6 @@ p, li {
   opacity: 0.4;
   line-height: 25px;
 }
-
-
-
 
 /*  */
 /*  */
@@ -122,7 +115,7 @@ p, li {
   margin: 0 auto;
 }
 .desktopStyleOnly .content {
-  width:calc(100% - 300px);
+  width: calc(100% - 300px);
   min-height: calc(100vh - 40px);
 }
 .desktopStyleOnly .listWrapper-box {
@@ -171,22 +164,22 @@ p, li {
   max-width: 850px;
 }
 
-
-
 /* Content size and top padding */
 .desktopStyleOnly .content > * {
   max-width: 850px;
   margin: 0 auto;
 }
-.desktopStyleOnly .bodyContentList, .desktopStyleOnly .contentDetail {
+.desktopStyleOnly .bodyContentList,
+.desktopStyleOnly .contentDetail {
   margin-top: 50px;
 }
 .desktopStyleOnly .basicScreen {
   margin-top: 70px;
 }
-.desktopStyleOnly .bodyContentList-back, .desktopStyleOnly .contentDetailContainer-back {
-  margin-bottom:10px;
-  text-align:left;
+.desktopStyleOnly .bodyContentList-back,
+.desktopStyleOnly .contentDetailContainer-back {
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 /* Cursor pointer adjustment */

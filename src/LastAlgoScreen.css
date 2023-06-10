@@ -1,0 +1,56 @@
+.lastAlgoScreen {
+  padding-bottom: 100px;
+}
+.desktopStyleOnly .lastAlgoContent {
+  max-width: 850px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.lastAlgoScreen h2 {
+  text-align: center;
+}
+.lastAlgoScreen li {
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+.lastTitleMsg {
+  display: flex;
+  padding: 3px 10px;
+  color: #ce322f;
+  font-weight: bold;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  justify-content: center;
+}
+#dark .lastTitleMsg {
+  background-color: #fec761;
+  color: #992b29;
+  border-radius: 100px;
+  width: fit-content;
+}
+#light .lastFactsWrapper {
+  padding: 0 20px 20px 20px;
+  border: 1px solid #005c73;
+  border-radius: 10px;
+  background-color: #fff;
+}
+#dark .lastFactsWrapper {
+  padding: 0 20px 20px 20px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  /* background-color: #0c6c82; */
+}
+.lastFactTitle {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.lastImg {
+  padding: 20px 0;
+}
+.lastImgCaption {
+  font-style: italic;
+}

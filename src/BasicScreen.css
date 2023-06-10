@@ -3,12 +3,11 @@
   word-break: break-word;
 }
 
-
 .accordion-title {
   padding: 20px 0;
   border-bottom: 1px solid #ccc;
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
 }
 .accordion-title h2 {
@@ -21,39 +20,40 @@
   color: #005c73;
 }
 #dark .accordion-title--selected {
-  color: #E7B06D;
+  color: #e7b06d;
 }
 #dark .accordion-title--default {
   color: #ededed;
 }
-
-
 
 .accordion-content {
   padding: 20px 0 40px;
   border-bottom: 1px solid #ccc;
 }
 .accordion-content--show {
-  display:block;
+  display: block;
 }
 .accordion-content--hidden {
   display: none;
 }
-.accordion-content ul, .accordion-content ol {
+.accordion-content ul,
+.accordion-content ol {
   padding: 5px 0;
 }
-.accordion-content ul ul, .accordion-content ol ol {
+.accordion-content ul ul,
+.accordion-content ol ol {
   margin-left: 20px;
-  padding:0;
+  padding: 0;
 }
-.accordion-content ul p, .accordion-content ol p {
-  font-weight:bold;
+.accordion-content ul p,
+.accordion-content ol p {
+  font-weight: bold;
 }
 .accordion-content li {
   margin-left: 20px;
   padding-bottom: 5px;
 }
-.accordion-content--img img{
+.accordion-content--img img {
   width: 100%;
   display: block;
   padding-top: 10px;
@@ -67,57 +67,57 @@
   width: 150%;
 }
 .tdWidth-70 {
-  min-width: 100px!important;
+  min-width: 100px !important;
 }
 .accordion-content table {
   table-layout: auto;
   min-width: 100%;
   /* width: 150%; */
-  font-size: 0.75em;
+  font-size: 0.85em;
   /* margin: 5px 0; */
 }
 #light .accordion-content table {
   border: 1px solid #005c73;
 }
 #dark .accordion-content table {
-  border: 1px solid #E7B06D;
+  border: 1px solid #e7b06d;
 }
-.accordion-content table tr:first-child td{
-  font-weight:bold;
+.accordion-content table tr:first-child td {
+  font-weight: bold;
 }
-#light .accordion-content table tr:first-child td{
+#light .accordion-content table tr:first-child td {
   background-color: #005c73;
   color: #f7f7f7;
 }
-#dark .accordion-content table tr:first-child td{
-  background-color: #E7B06D;
+#dark .accordion-content table tr:first-child td {
+  background-color: #e7b06d;
   color: #212628;
 }
 .accordion-content table td {
   padding: 5px;
   border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-collapse: collapse;
+  border-left: 1px solid #ccc;
+  /* border-collapse: collapse; */
   min-width: 55px;
 }
 .accordion-content table tr:last-child td {
   border-bottom: none;
 }
-.accordion-content table td:last-child{
+.accordion-content table td:last-child {
   border-right: none;
 }
-
-
+.basicReimbursementTableNoteWrapper {
+  padding-top: 20px;
+}
 
 .accordion-content--reference {
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
   font-style: italic;
+  padding-bottom: 10px;
 }
 .accordion-content--reference > p {
   font-weight: bold;
 }
-
-
 
 .basicScreen__bottomFill {
   height: 100px;
