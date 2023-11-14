@@ -12,6 +12,8 @@ import "./App.css";
 import "./modules/MobileBottomNav.css";
 import NonMobile from "./modules/NonMobile";
 import DesktopSideNav from "./modules/DesktopSideNav";
+import { Link } from "react-router-dom";
+import AppQRcode from "./modules/AppQRcode";
 
 export const ThemeContext = createContext(null);
 
@@ -31,12 +33,9 @@ function App() {
       {/* Logo header */}
       {isMobile ? (
         <div className="header">
-          <p className="logo">Advanced Analgesia</p>
+          <p className="logo">EMRA RA</p>
         </div>
       ) : null}
-      {/* <div className="header">
-        <p className="logo">Advanced Analgesia</p>
-      </div> */}
 
       {/* Dark mode toggle */}
       {isMobile ? (
@@ -55,11 +54,6 @@ function App() {
       {isMobile ? null : (
         <div className="desktopStyleOnly">
           {/* Content */}
-          {/* { isMobile ? 
-        <Content />
-        :
-        <NonMobile /> 
-        } */}
           <Content />
 
           {/* Bottom navigation */}
@@ -78,6 +72,8 @@ function App() {
                   size={20}
                 />
               </div>
+
+              <AppQRcode />
             </div>
           )}
           {/* <MobileBottomNav /> */}

@@ -9,6 +9,7 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import NotificationImportantOutlinedIcon from "@mui/icons-material/NotificationImportantOutlined";
 import { Link, useParams } from "react-router-dom";
+import AppQRcode from "./AppQRcode";
 
 function DesktopSideNav() {
   const params = useParams();

@@ -32,7 +32,7 @@ li {
   line-height: 1.2;
 }
 img {
-  max-width: 100%;
+  max-width: 600px;
 }
 
 /* Typography */
@@ -83,7 +83,7 @@ img {
 }
 
 .App {
-  /* min-height: calc(100vh - 75px); */
+  min-height: calc(100vh - 75px);
 }
 
 /* Header */
@@ -185,4 +185,9 @@ img {
 /* Cursor pointer adjustment */
 .desktopStyleOnly .content .accordion-title:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 680px) {
+  .App {
+  }
 }

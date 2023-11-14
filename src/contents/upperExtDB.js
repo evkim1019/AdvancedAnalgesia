@@ -2,7 +2,11 @@ const upperExtDB = [
   {
     name: 'Interscalene Brachial Plexus Block',
     url: 'Interscalene',
-    illustration: '',
+    author: [
+      'Arun D. Nagdev, MD | Highland Hospital & University of California, San Francisco',
+      'Daniel Mantuani, MD, MPH | Highland Hospital & University of California, San Francisco',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -10,7 +14,7 @@ const upperExtDB = [
         Probe: 'High-Frequency linear probe ',
         Needle:
           '50 mm, 22-gauge blunt tip needle; Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '5-10 mL',
+        volumeOfAnesthetic: '5-10 mL',
         Other:
           '10 mL syringe, 10 mL sterile saline (for hydrodissection). Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -98,8 +102,15 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/interscalene/4.1+Interscalene+brachial+plexus+US+-+plain.jpg',
       },
       {
-        caption: 'Probe placement | 1 = Sternocleidomastoid | 2 = Nerve Roots | 3 = Anterior Scalene | 4 = Middle Scalene ',
+        caption:
+          'Probe placement | 1 = Sternocleidomastoid | 2 = Nerve Roots | 3 = Anterior Scalene | 4 = Middle Scalene ',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/interscalene/4.1+Interscalene+brachial+plexus+US+-+labeled.jpg',
+      },
+    ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/interscalene/interscalene_brachial_plexus_block+(540p).mp4',
       },
     ],
   },
@@ -107,7 +118,11 @@ const upperExtDB = [
   {
     name: 'Supraclavicular Brachial Plexus Block',
     url: 'supraclavicular-brachial-plexus',
-    illustration: '',
+    author: [
+      'Arun D. Nagdev, MD | Highland Hospital & University of California, San Francisco',
+      'Daniel Mantuani, MD, MPH | Highland Hospital & University of California, San Francisco',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -115,7 +130,7 @@ const upperExtDB = [
         Probe: 'High-Frequency Linear probe',
         Needle:
           '50 mm, 22 G blunt tip needle. Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '5-10 mL',
+        volumeOfAnesthetic: '5-10 mL',
         Other:
           '10 mL syringe, 10 mL sterile saline (for hydrodissection). Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -202,8 +217,15 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/supraclavicularbrachialplexus/4.2+Supraclavicular+brachial+plexus+US+-+plain.jpg',
       },
       {
-        caption: 'Probe placement | 1 = Subclavian Artery | 2 = Brachial Plexus | 3 = First Rib | 4 = Pleura ',
+        caption:
+          'Probe placement | 1 = Subclavian Artery | 2 = Brachial Plexus | 3 = First Rib | 4 = Pleura ',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/supraclavicularbrachialplexus/4.2+Supraclavicular+brachial+plexus+US+-+labeled.jpg',
+      },
+    ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/supraclavicularbrachialplexus/supraclavicular_brachial_plexus_block+(540p).mp4',
       },
     ],
   },
@@ -211,7 +233,10 @@ const upperExtDB = [
   {
     name: 'Suprascapular Nerve Block',
     url: 'suprascapular',
-    illustration: '',
+    author: [
+      'Marc L. Martel, MD | Hennepin Healthcare & University of Minnesota Medical School',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -219,7 +244,7 @@ const upperExtDB = [
         Probe: 'High-Frequency Linear probe',
         Needle:
           '80-100 mm, 22 G blunt tip needle. Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '10-15 mL',
+        volumeOfAnesthetic: '10-15 mL',
         Other:
           '10-20 mL syringe, 10 mL sterile saline (for hydrodissection). Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -260,7 +285,7 @@ const upperExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Ultrasound visualization may improve when patient places affected hand onunaffected shoulder.',
         'Avoid entering the suprascapular notch, as there is risk of causing a pneumothorax. Excessive needle movement anteriorly through the notch can result in pleural puncture.',
@@ -286,17 +311,26 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/suprascapular/4.3+Suprascapular+US+-+plain.jpg',
       },
       {
-        caption: 'Probe placement | 1 = Trapezius | 2 = Supraspinatus | 3 = Suprascapular Nerve | 4 = Suprascapular notch outline ',
+        caption:
+          'Probe placement | 1 = Trapezius | 2 = Supraspinatus | 3 = Suprascapular Nerve | 4 = Suprascapular notch outline ',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/suprascapular/4.3+Suprascapular+US+-+labeled.jpg',
+      },
+    ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/suprascapular/suprascapular_block+(540p).mp4',
       },
     ],
   },
 
-
   {
     name: 'Axillary Brachial Plexus Block',
     url: 'axillary-brachial-plexus',
-    illustration: '',
+    author: [
+      'Robert F. Reardon, MD | Hennepin Healthcare & University of Minnesota Medical School',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -304,7 +338,7 @@ const upperExtDB = [
         Probe: 'High-Frequency Linear probe',
         Needle:
           '50 mm, 22 G blunt tip needle. Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '20-40 mL',
+        volumeOfAnesthetic: '20-40 mL',
         Other:
           '20-50 mL syringe. Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -345,7 +379,7 @@ const upperExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'A single perivascular injection works as well as multiple injections adjacent to median, radial, and ulnar nerves.',
         'This block can be performed more distal in the region of the proximal one-third of the upper arm as well.',
@@ -383,17 +417,20 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/axillary/4.4+Axillary+Brachial+Plexus+US+-+plain.jpg',
       },
       {
-        caption: 'Ultrasound anatomy labeled | 1 = Axillary Artery | 2 = Axillary Vein | 3 = Radial Nerve | 4 = Median Nerve | 5 = Ulnar Nerve | 6 = Musculocutaneous nerve | 7 = Biceps brachialis muscle | 8 = Coracobrachialis muscle ',
+        caption:
+          'Ultrasound anatomy labeled | 1 = Axillary Artery | 2 = Axillary Vein | 3 = Radial Nerve | 4 = Median Nerve | 5 = Ulnar Nerve | 6 = Musculocutaneous nerve | 7 = Biceps brachialis muscle | 8 = Coracobrachialis muscle ',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/axillary/4.4+Axillary+Brachial+Plexus+US+-+labeled.jpg',
       },
     ],
   },
 
-  
   {
     name: 'Median Nerve Block',
     url: 'median',
-    illustration: '',
+    author: [
+      'Kristin H. Dwyer, MD, MPH | The Warren Alpert Medical School of Brown University',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -401,7 +438,7 @@ const upperExtDB = [
         Probe: 'High-frequency linear probe',
         Needle:
           '50 mm, 22 G blunt tip needle, Hyperechoic block needle preferred, tubing optional',
-        'Volume of Anesthetic': '5-10cc',
+        volumeOfAnesthetic: '5-10cc',
         Other: '10 mL syringe, Skin prep and PPE',
       },
     },
@@ -442,7 +479,7 @@ const upperExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Good visualization of nerves is important — using a nerve preset and understanding the concept of anisotropy (angle generated artifact) will help.',
         'The median nerve is more easily distinguished in the mid-forearm.',
@@ -473,7 +510,8 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/median/4.7+Median+nerve+US+-+proximal+plain.jpg',
       },
       {
-        caption: 'Proximal Ultrasound anatomy labeled | 1 = Median Nerve | 2 = Artery',
+        caption:
+          'Proximal Ultrasound anatomy labeled | 1 = Median Nerve | 2 = Artery',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/median/4.7+Median+nerve+US+-+proximal+labeled.jpg',
       },
       {
@@ -481,7 +519,8 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/median/4.7+Median+nerve+US+-+distal+plain.jpg',
       },
       {
-        caption: 'Distal Ultrasound anatomy labeled | 1 = Median Nerve | 2 = Artery',
+        caption:
+          'Distal Ultrasound anatomy labeled | 1 = Median Nerve | 2 = Artery',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/median/4.7+Median+nerve+US+-+distal+labeled.jpg',
       },
     ],
@@ -496,14 +535,19 @@ const upperExtDB = [
   {
     name: 'Radial Nerve Block',
     url: 'radial',
-    illustration: '',
+    author: [
+      "Alexis LaPietra, DO | St. Joseph's Regional Medical Center",
+      'Igor Middlebrook, DO, MS | University of North Carolina Health Wayne',
+    ],
+    mainImg: '',
     materials: {
-      title: '',
+      title:
+        'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: 'High-Frequency Linear probe',
         Needle:
           '50 mm, 22 G blunt tip needle; Hyperechoic block needle preferred, tubing optional',
-        'Volume of Anesthetic': '5-10 mL',
+        volumeOfAnesthetic: '5-10 mL',
         Other:
           '10 mL syringe, Skin prep and PPE, Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -549,7 +593,7 @@ const upperExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Perform with ulnar and/or medial nerve blocks for a complete hand block.',
         'To avoid motor blockade, block distal to the elbow crease, past the point of bifurcation, into superficial sensory and deep motor branches.',
@@ -591,34 +635,40 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/Picture1.png',
       },
       {
-      caption: 'Proximal Ultrasound anatomy unlabeled',
-      url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/4.6+Radial+nerve+US+-+proximal+plain.jpg',
-    },
-    {
-      caption: 'Proximal Ultrasound anatomy labeled | 1 = Radial Vein | 2 = Radial Nerve | 3 = Radial Artery | 4 = Radius | 5 = Humerus ',
-      url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/4.6+Radial+nerve+US+-+proximal+labeled.jpg',
-    },
-    {
-      caption: 'Distal Ultrasound anatomy unlabeled',
-      url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/4.6+Radial+nerve+US+-+distal+plain.jpg',
-    },
-    {
-      caption: 'Distal Ultrasound anatomy labeled | 1 = Radial Vein | 2 = Radial Nerve | 3 = Radial Artery | 4 = Radius | 5 = Humerus',
-      url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/4.6+Radial+nerve+US+-+distal+labeled.jpg',
-    },
+        caption: 'Proximal Ultrasound anatomy unlabeled',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/4.6+Radial+nerve+US+-+proximal+plain.jpg',
+      },
+      {
+        caption:
+          'Proximal Ultrasound anatomy labeled | 1 = Radial Vein | 2 = Radial Nerve | 3 = Radial Artery | 4 = Radius | 5 = Humerus ',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/4.6+Radial+nerve+US+-+proximal+labeled.jpg',
+      },
+      {
+        caption: 'Distal Ultrasound anatomy unlabeled',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/4.6+Radial+nerve+US+-+distal+plain.jpg',
+      },
+      {
+        caption:
+          'Distal Ultrasound anatomy labeled | 1 = Radial Vein | 2 = Radial Nerve | 3 = Radial Artery | 4 = Radius | 5 = Humerus',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/4.6+Radial+nerve+US+-+distal+labeled.jpg',
+      },
     ],
     videos: [
       {
         caption: '',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/radial/1.2.2.3.4.2.2.+Video+file+-+Radial.mp4',
-      }
+      },
     ],
   },
 
   {
     name: 'Ulnar Nerve Block',
     url: 'ulnar',
-    illustration: '',
+    author: [
+      "Alexis LaPietra, DO | St. Joseph's Regional Medical Center",
+      'Igor Middlebrook, DO, MS | University of North Carolina Health Wayne',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -626,7 +676,7 @@ const upperExtDB = [
         Probe: 'High-Frequency Linear probe',
         Needle:
           '50 mm, 22 G blunt tip needle. Hyperechoic block needle preferred, tubing optional',
-        'Volume of Anesthetic': '5-10 mL',
+        volumeOfAnesthetic: '5-10 mL',
         Other:
           '10 mL syringe, Skin prep and PPE, Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -674,7 +724,7 @@ const upperExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Before blocking the ulnar nerve in the forearm, check ulnar sensory function at 4th and 5th fingertips and the ulnar motor branch by testing for Froment’s sign.',
       ],
@@ -716,7 +766,8 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/ulnar/4.5+Ulnar+nerve+US+-+proximal+plain.jpg',
       },
       {
-        caption: 'Proximal Ultrasound anatomy labeled | 1 = Ulna | 2 = Ulnar Nerve | 3 = Ulnar Artery',
+        caption:
+          'Proximal Ultrasound anatomy labeled | 1 = Ulna | 2 = Ulnar Nerve | 3 = Ulnar Artery',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/ulnar/4.5+Ulnar+nerve+US+-+proximal+labeled.jpg',
       },
       {
@@ -724,7 +775,8 @@ const upperExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/ulnar/4.5+Ulnar+nerve+US+-+distal+plain.jpg',
       },
       {
-        caption: 'Distal Ultrasound anatomy labeled | 1 = Ulna | 2 = Ulnar Nerve | 3 = Ulnar Artery',
+        caption:
+          'Distal Ultrasound anatomy labeled | 1 = Ulna | 2 = Ulnar Nerve | 3 = Ulnar Artery',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/ulnar/4.5+Ulnar+nerve+US+-+distal+labeled.jpg',
       },
     ],
@@ -732,15 +784,18 @@ const upperExtDB = [
 
   {
     name: 'Landmark-based Hand Block',
-    url: 'axillary-brachial-plexus',
-    illustration: '',
+    url: 'landmark-based-hand-block',
+    author: [
+      'Kristin H. Dwyer, MD, MPH | The Warren Alpert Medical School of Brown University',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: 'N/A',
         Needle: "25 G, 1.5' blunt tip needle",
-        'Volume of Anesthetic': '10-15 mL',
+        volumeOfAnesthetic: '10-15 mL',
         Other:
           '10-20 mL syringe, Skin prep and PPE, Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -784,7 +839,7 @@ const upperExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Good visualization of the nerves is important — using a nerve preset and understanding the concept of anisotropy (angle generated artifact) will help improve nerve visualization.',
         'Median nerve is more easily located in the mid-forearm, as closer to the wrist it can be difficult to distinguish from surrounding tendons.',
@@ -812,7 +867,6 @@ const upperExtDB = [
         caption: 'Nerve Anatomy',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/landmark/4.8+Hand+Landmarks+-+anatomy+illustrations.jpg',
       },
-
     ],
     photos: [
       {
@@ -830,6 +884,12 @@ const upperExtDB = [
       {
         caption: 'Hand Landmarks - Ulnar Nerve',
         url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/landmark/4.8+Hand+Landmarks+-+ulnar+needle+place.jpg',
+      },
+    ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/upperextremity+/landmark/landmark_based_hand_block+(540p).mp4',
       },
     ],
   },

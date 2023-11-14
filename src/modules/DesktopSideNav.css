@@ -1,6 +1,6 @@
 #desktopSideNav {
   width: 300px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 #light .sideNavActive {
   background-color: #ededed;
@@ -8,13 +8,13 @@
 }
 #dark .sideNavActive {
   background-color: #212628;
-  color: #E7B06D;
+  color: #e7b06d;
 }
 .sideNavActive > p::after {
-  content: ">"
+  content: ">";
 }
 .desktopSideNav--item {
-  padding: 20px;
+  padding: 13px 20px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -39,8 +39,6 @@
   justify-content: space-between;
 }
 
-
-
 /* Nested navigation */
 #light .sideSubNavWrapper {
   border-left: 10px solid #ccc;
@@ -49,8 +47,8 @@
   border-left: 10px solid #666;
 }
 .sideSubNavWrapper .desktopSideNav--item {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .sideSubNavWrapper .desktopSideNav--item p {
   font-size: 1.1rem;

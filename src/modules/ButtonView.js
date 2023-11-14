@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { isMobile } from "react-device-detect";
+
+import appStoreBanner from "../contents/contentImg/emra_ra-1200x628.png";
+
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 
 // import armsImg from '../illustrations/thumbUpper.png';
@@ -8,6 +12,7 @@ import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRigh
 // import headImg from '../illustrations/thumbHeadNeck.png';
 // import legsImg from '../illustrations/thumbLower.png'
 import "./ButtonView.css";
+import AppQRcode from "./AppQRcode";
 
 function ButtonView() {
   return (
@@ -92,6 +97,19 @@ function ButtonView() {
           </div>
           </>
         </a> */}
+
+        {isMobile ? (
+          <a href="https://apple.co/46cwThW" target="_blank">
+            <img
+              src={appStoreBanner}
+              alt="Appstore banner"
+              style={{
+                maxWidth: "100%",
+                padding: "7px 10px",
+              }}
+            />
+          </a>
+        ) : null}
       </div>
     </div>
   );

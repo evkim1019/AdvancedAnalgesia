@@ -2,14 +2,15 @@ const otherMskDB = [
   {
     name: 'Hematoma Block for Humerus Fractures',
     url: 'hematoma-block-for-humerus-fractures',
-    illustration: '',
+    author: ['Ramnik Dhaliwal, MD, JD | Carepoint Health'],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: 'Optional; high-frequency linear probe, if US is used',
         Needle: "18-22 G, 1.5' long beveled/sharp tip needle",
-        'Volume of Anesthetic':
+        volumeOfAnesthetic:
           '10-20 mL (bupivacaine relatively contraindicated; lidocaine preferred)',
         Other: '10-20 mL syringe; skin prep and PPE',
       },
@@ -48,7 +49,7 @@ const otherMskDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'If not getting blood using blind/palpation technique, consider using US for direct visualization of fracture.',
         'Do not use bupivacaine; hematoma blocks carry increased risk of LAST.',
@@ -66,23 +67,32 @@ const otherMskDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/humerus+hematoma+block/6.1+Humerus+hematoma+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled | 1 =  Intact Bone Cortex | 2 = Area of Fracture ',
+        caption:
+          'US anatomy labeled | 1 =  Intact Bone Cortex | 2 = Area of Fracture ',
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/humerus+hematoma+block/6.1+Humerus+hematoma+US+labeled.jpg',
       },
     ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/ankle+hematoma+block/hematoma_blocks+(540p).mp4',
+      },
+    ],
+
   },
 
   {
     name: 'Hematoma Block for Ankle Fractures',
     url: 'hematoma-block-for-ankle-fractures',
-    illustration: '',
+    author: ['Ramnik Dhaliwal, MD, JD | Carepoint Health'],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: 'Optional; high-frequency linear probe, if US is used',
         Needle: "18-22 G, 1.5' long beveled/sharp tip needle",
-        'Volume of Anesthetic':
+        volumeOfAnesthetic:
           '10-20 mL (bupivacaine relatively contraindicated; lidocaine preferred)',
         Other: '10-20 mL syringe; skin prep and PPE',
       },
@@ -122,7 +132,7 @@ const otherMskDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Reductions can often be performed with hematoma blocks alone, avoiding the need for conscious sedation.',
         'For displaced fractures, US is rarely required; injection can be done by visualization or palpation.',
@@ -138,23 +148,32 @@ const otherMskDB = [
     },
     photos: [
       {
-        caption: 'Anatomy | Yellow = Medial Malleolus | Brown = Lateral Malleolus | Teal = Tibialis Anterior Tendon',
+        caption:
+          'Anatomy | Yellow = Medial Malleolus | Brown = Lateral Malleolus | Teal = Tibialis Anterior Tendon',
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/ankle+hematoma+block/6.2+Hematoma+-+ankle+photo.jpg',
       },
     ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/ankle+hematoma+block/hematoma_blocks+(540p).mp4',
+      },
+    ],
+
   },
 
   {
     name: 'Hematoma Block for Wrist Fractures',
     url: 'hematoma-block-for-wrist-fractures',
-    illustration: '',
+    author: ['Ramnik Dhaliwal, MD, JD | Carepoint Health'],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: 'Optional; high-frequency linear probe, if US is used',
         Needle: "18-22 G, 1.5' long beveled/sharp tip needle",
-        'Volume of Anesthetic':
+        volumeOfAnesthetic:
           '10-20 mL (bupivacaine relatively contraindicated; lidocaine preferred)',
         Other: '10-20 mL syringe; skin prep and PPE',
       },
@@ -196,7 +215,7 @@ const otherMskDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Reductions can often be performed with hematoma blocks alone, avoiding need for conscious sedation.',
         'If not getting blood using blind/palpation technique, consider using US for direct visualization of fracture.',
@@ -226,23 +245,35 @@ const otherMskDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/hematoma+block+wrist/6.3+Hematoma+wrist+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled | 1 =  Intact Bone Cortex | 2 = Area of Fracture',
+        caption:
+          'US anatomy labeled | 1 =  Intact Bone Cortex | 2 = Area of Fracture',
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/hematoma+block+wrist/6.3+Hematoma+wrist+US+labeled.jpg',
       },
     ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/ankle+hematoma+block/hematoma_blocks+(540p).mp4',
+      },
+    ],
+
   },
 
   {
     name: 'Trigger Point Injection (TPI) Thoracic and Lumbar Muscles',
     url: 'trigger-point-injection-and-lumbar-muscles',
-    illustration: '',
+    author: [
+      'Aaron Schaffner, MD | Baptist Medical Center East',
+      'Donald E. Stader III, MD | Carepoint Health',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: '',
         Needle: '25-27 G, 1.5” long beveled/sharp tip needle',
-        'Volume of Anesthetic': '10-20 mL',
+        volumeOfAnesthetic: '10-20 mL',
         Other: '10-20 mL syringe. Skin prep and PPE',
       },
     },
@@ -277,7 +308,7 @@ const otherMskDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'For additional safety, US can be used to determine depth of pleura and/or peritoneum and avoid accidental pneumothorax or bowel injury.',
         "Dry needling by rapidly and repeatedly “pistoning” the needle deeper and more shallow (without exiting the skin) around the trigger point may also help. Dry needling can be performed after depositing LA, or without LA. Dry needling can also be done in patients in whom LA is contraindicated or to additional trigger points once you've reached LA limits.",
@@ -297,7 +328,8 @@ const otherMskDB = [
     },
     photos: [
       {
-        caption: 'Trigger Point Injection Areas | Teal = Common thoracic Trigger Point Injection sites | Purple = Line delineates 12th rib, above which there is increased risk of PTX | Yellow = Common lumbar TPI sites | Orange = DO NOT INJECT; risk of injury to sciatic nerve',
+        caption:
+          'Trigger Point Injection Areas | Teal = Common thoracic Trigger Point Injection sites | Purple = Line delineates 12th rib, above which there is increased risk of PTX | Yellow = Common lumbar TPI sites | Orange = DO NOT INJECT; risk of injury to sciatic nerve',
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/trigger+point+injection+thoracic+and+lumbar+/6.4+TPI+Thoracic+-+trigger+points.jpg',
       },
       {
@@ -315,19 +347,24 @@ const otherMskDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/torso/triggerThoracicandLumbar/1.2.2.5.2.3.+Video+file+%E2%80%93+Trigger+point.mp4',
       },
     ],
+
   },
 
   {
     name: 'Trigger Point Injection Cervical and Trapezius',
     url: 'trigger-point-injection-cervical-and-trapezius',
-    illustration: '',
+    author: [
+      'Aaron Schaffner, MD | Baptist Medical Center East',
+      'Donald E. Stader III, MD | Carepoint Health',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: '',
         Needle: '25-27 G, 1.5” long beveled/sharp tip needle',
-        'Volume of Anesthetic':
+        volumeOfAnesthetic:
           '2-3 mL per side if cervical; 2-4 mL per side if trapezius',
         Other: '10-20 mL syringe. Skin prep and PPE',
       },
@@ -381,7 +418,7 @@ const otherMskDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Cervical and trapezius TPIs both carry risk of pneumothorax; be cognizant of needle angles and consent patients to this risk.',
         'Cervical TPI has shown benefit for facial and dental pain, in addition to headache and neck pain.',
@@ -425,14 +462,21 @@ const otherMskDB = [
   {
     name: 'Knee Injection',
     url: 'knee-injection',
-    illustration: '',
+    author: [
+      'Arun D. Nagdev, MD | Highland Hospital, University of California, San Francisco',
+      'Alan C. Taylor, MD | University of Tennessee Health Science Center',
+      'Emily Lovallo, MD, | University of Pittsburgh',
+      'Brian Johnson, MD, MPH | Valley Medical Center - University of Washington',
+      'Daniel Mantuani, MD, MPH | Highland Hospital & University of California, San Francisco',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: 'Optional; high-frequency linear probe, if US is used',
         Needle: "18-22 G, 1.5' long beveled/sharp tip needle",
-        'Volume of Anesthetic':
+        volumeOfAnesthetic:
           '10 mL; consider addition of 40 mg/1 mL of triamcinolone to LA',
         Other: '10 mL syringe. Skin prep and PPE',
       },
@@ -482,7 +526,7 @@ const otherMskDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Evaluate with US prior to sterilizing your field.',
         'Iodine can be transferred into joint space and produce an inflammatory reaction. If used, wipe off in a sterile fashion prior to procedure, or use alternative skin prep.',
@@ -513,7 +557,8 @@ const otherMskDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/knee+injection/6.6+Knee+injection+-+sagittal+US+plain.jpg',
       },
       {
-        caption: 'US Anatomy Longitudinal View labeled | 1 = Patella | 2 = Quadriceps Tendon | 3 = Femur',
+        caption:
+          'US Anatomy Longitudinal View labeled | 1 = Patella | 2 = Quadriceps Tendon | 3 = Femur',
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/knee+injection/6.6+Knee+injection+-+sagittal+US+labeled.jpg',
       },
       {
@@ -521,16 +566,28 @@ const otherMskDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/knee+injection/6.6+Knee+injection+-+transverse+US+plain.jpg',
       },
       {
-        caption: 'US Anatomy Transerve View labeled | 1 = Patella | 2 = Quadriceps Tendon | 3 = Femur',
+        caption:
+          'US Anatomy Transerve View labeled | 1 = Patella | 2 = Quadriceps Tendon | 3 = Femur',
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/knee+injection/6.6+Knee+injection+-+transverse+US+labeled.jpg',
       },
     ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/joint_injections+(540p).mp4',
+      },
+    ],
+
   },
 
   {
     name: 'Shoulder Injection',
     url: 'shoulder-injection',
-    illustration: '',
+    author: [
+      'Arun D. Nagdev, MD | Highland Hospital, University of California, San Francisco',
+      'Tony A. Downs, MD | University of Tennessee Health Science Center',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -538,7 +595,7 @@ const otherMskDB = [
         Probe: 'Optional; high-frequency linear probe, if US is used',
         Needle:
           "18-22 G, long beveled/sharp tip needle or 22 G, 3.5' spinal needle",
-        'Volume of Anesthetic':
+        volumeOfAnesthetic:
           '10-20 mL; consider addition of 40 mg/1 mL of triamcinolone to LA',
         Other:
           '10-20 mL syringe. Full sterile prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
@@ -583,7 +640,7 @@ const otherMskDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Evaluate with US prior to sterilizing your field.',
         'Iodine can be transferred into joint space and produce an inflammatory reaction. If used, wipe off in a sterile fashion prior to procedure, or use alternative skin prep.',
@@ -614,14 +671,15 @@ const otherMskDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/shoulder+injection/6.7+Shoulder+US+plain.jpg',
       },
       {
-        caption: 'Ultrasound Anatomy showing in-plane lateral needle approach Labeled | 1 = Deltoid | 2 = Glenoid | 3 = Infraspinatus Muscle | 4 = Humeral Head ',
+        caption:
+          'Ultrasound Anatomy showing in-plane lateral needle approach Labeled | 1 = Deltoid | 2 = Glenoid | 3 = Infraspinatus Muscle | 4 = Humeral Head ',
         url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/shoulder+injection/6.7+Shoulder+US+labeled.jpg',
       },
     ],
     videos: [
       {
         caption: '',
-        url: 'https://advanced-analgesia.s3.amazonaws.com/headandneck/triggerpointCervicalandTrapezius/1.2.2.5.2.3.+Video+file+%E2%80%93+Trigger+point.mp4',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/joint_injections+(540p).mp4',
       },
     ],
   },
@@ -629,14 +687,20 @@ const otherMskDB = [
   {
     name: 'Hip Injection',
     url: 'hip-injection',
-    illustration: '',
+    author: [
+      'Arun D. Nagdev, MD | Highland Hospital, University of California, San Francisco',
+      'Marcin Byra, DO | University of Tennessee Health Science Center',
+      'Daniel Mantuani, MD, MPH | Highland Hospital & University of California, San Francisco',
+      'Caitlin Bailey, MD | Highland Hospital & University of California, San Francisco',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: 'Curvilinear or high-frequency linear probe for shallower depth',
         Needle: '22 G, 3.5-5” spinal needle',
-        'Volume of Anesthetic':
+        volumeOfAnesthetic:
           '3-10 mL; consider addition of 40 mg/1 mL of triamcinolone to LA',
         Other: '10 mL syringe. Full sterile prep and PPE',
       },
@@ -683,7 +747,7 @@ const otherMskDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Evaluate with US prior to sterilizing your field.',
         'Iodine can be transferred into joint space and produce an inflammatory reaction. If used, wipe off in a sterile fashion prior to procedure, or use alternative skin prep.',
@@ -721,7 +785,7 @@ const otherMskDB = [
     videos: [
       {
         caption: '',
-        url: 'https://advanced-analgesia.s3.amazonaws.com/headandneck/triggerpointCervicalandTrapezius/1.2.2.5.2.3.+Video+file+%E2%80%93+Trigger+point.mp4',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/othermsk/joint_injections+(540p).mp4',
       },
     ],
   },

@@ -1,6 +1,7 @@
 .buttonView {
-  overflow: hidden;
+  /* overflow: hidden; */
   height: auto !important;
+  padding-bottom: 100px;
 }
 .landingGuide {
   padding: 10px;
@@ -127,4 +128,18 @@
 
 .buttonView_thumb--lower {
   background-image: url("../illustrations/mainButton-legs.png");
+}
+
+@media only screen and (max-width: 680px) {
+  .buttonWrapper {
+    height: auto;
+  }
+  .button {
+    margin: 4px auto;
+    height: 60px;
+  }
+  .button .buttonView_text h2 {
+    font-size: 24px;
+    line-height: 1;
+  }
 }

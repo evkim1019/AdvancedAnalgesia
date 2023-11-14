@@ -906,7 +906,7 @@ function BasicScreen() {
                   : "accordion-title--default"
               }`}
             >
-              How to Implement Rregional Anesthesia Training
+              How to Implement Regional Anesthesia Training
             </h2>
           </div>
           <div

@@ -9,6 +9,7 @@ import torsoDB from "../contents/torsoDB";
 import upperExtDB from "../contents/upperExtDB";
 import lowerExtDB from "../contents/lowerExtDB";
 import otherMskDB from "../contents/otherMskDB";
+import AppQRcode from "./AppQRcode";
 
 function List() {
   const [listHead, setListHead] = useState(headneckDB);

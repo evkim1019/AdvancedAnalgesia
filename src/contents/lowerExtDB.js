@@ -2,7 +2,11 @@ const lowerExtDB = [
   {
     name: 'Pericapsular Nerve Group Block (PENG)',
     url: 'peng',
-    illustration: '',
+    author: [
+      "Andrew J. Goldsmith, MD, MBA | Brigham and Women's Hospital & Harvard Medical School",
+      'Joseph Stegeman, MD | Harvard Affiliated Emergency Medicine Residency',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -10,7 +14,7 @@ const lowerExtDB = [
         Probe: 'Curvilinear Probe',
         Needle:
           '80-100 mm, 22 G blunt tip block needle. Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '20-30 mL',
+        volumeOfAnesthetic: '20-30 mL',
         Other:
           '30 mL syringe; 10 mL sterile saline (for hydrodissection). Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal.',
       },
@@ -56,7 +60,7 @@ const lowerExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         ' Bone can be more easily visualized in elderly patients with atrophied muscle and fascial layers that can make plane blocks difficult.',
         'This is a newer block similar to the fascia iliaca and femoral blocks; it anesthetizes the articular branches of the femoral, obturator, and accessory obturator nerves.',
@@ -92,8 +96,15 @@ const lowerExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/peng/5.1+PENG+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled  | 1 = Femoral Artery | 2 = Anterior Inferior Iliac Spine | 3 = Psoas Tendon | 4 = Ilopectineal Eminence | 5 = Femoral Nerve',
+        caption:
+          'US anatomy labeled  | 1 = Femoral Artery | 2 = Anterior Inferior Iliac Spine | 3 = Psoas Tendon | 4 = Ilopectineal Eminence | 5 = Femoral Nerve',
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/peng/5.1+PENG+US+labeled.jpg',
+      },
+    ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/peng/peng_block+(540p).mp4',
       },
     ],
   },
@@ -101,7 +112,11 @@ const lowerExtDB = [
   {
     name: 'Transgluteal Sciatic Nerve',
     url: 'transgluteal-sciatic-nerve',
-    illustration: '',
+    author: [
+      "Andrew J. Goldsmith, MD, MBA | Brigham and Women's Hospital & Harvard Medical School",
+      "Nicole M. Duggan, MD | Brigham and Women's Hospital & Harvard Medical School",
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -110,7 +125,7 @@ const lowerExtDB = [
           'Curvilinear probe (or high-frequency probe for shallower depth)',
         Needle:
           '100-120 mm. 22 G blunt tip needle Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '10-20 mL',
+        volumeOfAnesthetic: '10-20 mL',
         Other:
           '20-30 mL syringe; 10 mL sterile saline (for hydrodissection). Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -155,7 +170,7 @@ const lowerExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'An infragluteal approach, with probe placed transverse along the gluteal crease, may be used if structures are better visualized.',
         'You will likely need to take a fairly steep angle of approach to reach the injection target, given the relative depth of the sciatic nerve.',
@@ -188,7 +203,8 @@ const lowerExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/transgluteal/5.2+Transgluteal+Sciatic+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled | 1 = Greater Trochanter | 2 = Sciatic Nerve | 3 = Gluteus Maximus Muscle | 4 = Ischial Tuberosity | 5 = Quadratus Femoris Muscle',
+        caption:
+          'US anatomy labeled | 1 = Greater Trochanter | 2 = Sciatic Nerve | 3 = Gluteus Maximus Muscle | 4 = Ischial Tuberosity | 5 = Quadratus Femoris Muscle',
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/transgluteal/5.2+Transgluteal+Sciatic+US+labeled.jpg ',
       },
     ],
@@ -197,7 +213,11 @@ const lowerExtDB = [
   {
     name: 'Infrainguinal Fascia Iliaca Plane Block',
     url: 'fascia-iliaca',
-    illustration: '',
+    author: [
+      'Arun D. Nagdev, MD | Highland Hospital, University of California, San Francisco',
+      'Daniel Mantuani, MD, MPH | Highland Hospital',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -205,7 +225,7 @@ const lowerExtDB = [
         Probe: 'High-Frequency Linear probe',
         Needle:
           '80-100 mm, 22 G blunt tip needle. Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '30-40 mL',
+        volumeOfAnesthetic: '30-40 mL',
         Other:
           '50 mL syringe; 10 mL sterile saline (for hydrodissection). Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -249,7 +269,7 @@ const lowerExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Increasing volume (by dilution of LA), while staying within safe dose, can enhance spread and efficacy of block. Avoid intramuscular injections by ensuring fascial spread.',
         'If probe is too distal, femoral artery will bifurcate and anatomy will be distorted.',
@@ -283,12 +303,22 @@ const lowerExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/fasciailiaca/Picture3.png',
       },
       {
-        caption: 'US anatomy unlabeled',
+        caption: 'Fascia Iliaca US anatomy unlabeled',
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/fasciailiaca/5.3+Transinguinal+Fascia+Iliaca+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled | 1 = Fascia Lata | 2 = Fascia Iliaca | 3 = Femoral Artery | 4 = Femoral Nerve | 5 = Iliopsoas Muscle | 6 = Satorius',
-        url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/fasciailiaca/5.3+Transinguinal+Fascia+Iliaca+US+labeled.jpg ',
+        caption:
+          'Fascia Iliaca US anatomy labeled | 1 = Fascia Lata | 2 = Fascia Iliaca | 3 = Femoral Artery | 4 = Femoral Nerve | 5 = Iliopsoas Muscle | 6 = Satorius',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/fasciailiaca/5.3+Transinguinal+Fascia+Iliaca+US+labeled.jpg',
+      },
+      {
+        caption: 'Femoral Nerve US anatomy unlabeled',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/fasciailiaca/5.3+Femoral+Nerve+Block+US+plain.jpg',
+      },
+      {
+        caption:
+          'Femoral Nerve US anatomy labeled | 1 = Fascia Lata | 2 = Fascia Iliaca | 3 = Femoral Artery | 4 = Femoral Nerve | 5 = Iliopsoas Muscle | 6 = Satorius',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/fasciailiaca/5.3+Femoral+Nerve+Block+US+labeled.jpg',
       },
     ],
     videos: [
@@ -302,7 +332,10 @@ const lowerExtDB = [
   {
     name: 'Saphenous Nerve / Adductor Canal Block',
     url: 'adductor-canal',
-    illustration: '',
+    author: [
+      'Robert F. Reardon, MD | Hennepin Healthcare & University of Minnesota Medical School',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -310,7 +343,7 @@ const lowerExtDB = [
         Probe: 'High-Frequency Linear Probe',
         Needle:
           '80-100 mm, 22 G blunt tip needle. Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '20-30 mL',
+        volumeOfAnesthetic: '20-30 mL',
         Other:
           '20-30 mL syringe; 10 mL sterile saline (for hydrodissection) Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -355,7 +388,7 @@ const lowerExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'It is OK to perform more proximal in the leg, but you may risk more quadriceps weakness.',
         'Saphenous nerve may be difficult to appreciate prior to injection, and will be easier to visualize with hydrodissection.',
@@ -393,16 +426,28 @@ const lowerExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/adductorcanal/5.4+Saphenous+Nerve+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled | 1 = Femoral Vein | 2 = Saphenous Nerve | 3 = Femoral Artery | 4 = Sartorius | 5 = Vastus Medialis Muscle | 6 = Adductor Long/Magnus',
-        url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/adductorcanal/5.4+Saphenous+Nerve+US+labeled.jpg  ',
+        caption:
+          'US anatomy labeled | 1 = Femoral Vein | 2 = Saphenous Nerve | 3 = Femoral Artery | 4 = Sartorius | 5 = Vastus Medialis Muscle | 6 = Adductor Long/Magnus',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/adductorcanal/5.4+Saphenous+Nerve+US+labeled.jpg',
       },
     ],
+    videos: [
+      {
+        caption: '',
+        url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/adductorcanal/adductor_canal_block+(540p).mp4',
+      },
+    ],
+
   },
 
   {
     name: 'Distal Sciatic Nerve Block in Popliteal Fossa',
     url: 'popliteal-nerve',
-    illustration: '',
+    author: [
+      "Andrew J. Goldsmith, MD, MBA | Brigham and Women's Hospital & Harvard Medical School",
+      "Nicole M. Duggan, MD | Brigham and Women's Hospital & Harvard Medical School",
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -410,7 +455,7 @@ const lowerExtDB = [
         Probe: 'High-Frequency Linear probe',
         Needle:
           '50-100 mm, 22 G blunt tip needle. Hyperechoic block needle with tubing',
-        'Volume of Anesthetic': '20-30 mL',
+        volumeOfAnesthetic: '20-30 mL',
         Other:
           '20-30 mL syringe. 10 mL sterile saline (for hydrodissection) Skin prep and PPE. Optional: 1-2 mL 1% lidocaine in separate syringe for skin wheal',
       },
@@ -455,7 +500,7 @@ const lowerExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'Avoidinpatientswithmid-tibialfracturestoavoidmaskingcompartmentsyndrome.',
         'Below the knee this block only spares the medial leg/malleolus.',
@@ -487,7 +532,8 @@ const lowerExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/popliteal/5.5+Sciatic-Popliteal+-+Snowman+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled at at Popliteal Crease | 1 = Tibial Nerve | 3 = Popliteal Vein | 4 = Popliteal Artery ',
+        caption:
+          'US anatomy labeled at at Popliteal Crease | 1 = Tibial Nerve | 3 = Popliteal Vein | 4 = Popliteal Artery ',
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/popliteal/5.5+Sciatic-Popliteal+-+Snowman+US+labeled.jpg',
       },
       {
@@ -495,7 +541,8 @@ const lowerExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/popliteal/5.5+Sciatic-Popliteal+-+bifurcation+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled at Bifurcation of the Sciatic Nerve | 2 = Sciatic Nerve Bifurcating to Tibial and Common Peroneal Nerves | 3 = Popliteal Vein | 4 = Popliteal Artery ',
+        caption:
+          'US anatomy labeled at Bifurcation of the Sciatic Nerve | 2 = Sciatic Nerve Bifurcating to Tibial and Common Peroneal Nerves | 3 = Popliteal Vein | 4 = Popliteal Artery ',
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/popliteal/5.5+Sciatic-Popliteal+-+bifurcation+US+labeled.jpg',
       },
     ],
@@ -510,14 +557,17 @@ const lowerExtDB = [
   {
     name: 'Ankle Block',
     url: 'ankle',
-    illustration: '',
+    author: [
+      'Kristin H. Dwyer, MD, MPH | The Warren Alpert Medical School of Brown University',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
       content: {
         Probe: 'High-Frequency Linear probe',
         Needle: '50 mm, 25 G blunt tip needle; tubing optional',
-        'Volume of Anesthetic': '10-15 mL',
+        volumeOfAnesthetic: '10-15 mL',
         Other: '10-20 mL syringe. Skin prep and PPE',
       },
     },
@@ -579,7 +629,7 @@ const lowerExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'The ankle is innervated by 5 nerves: saphenous, deep peroneal, superficial peroneal, sural, and distal tibial nerves.',
         'Although ultrasound can be used with all of these blocks, many clinicians only use it with the deep peroneal nerve block and the distal tibial nerve block due to proximity to vascular structures.',
@@ -601,7 +651,11 @@ const lowerExtDB = [
   {
     name: 'Distal Tibial Nerve Block',
     url: 'posterior-tibial-nerve',
-    illustration: '',
+    author: [
+      'Arun D. Nagdev, MD | Highland Hospital, University of California, San Francisco',
+      'Daniel Mantuani, MD, MPH | Highland Hospital',
+    ],
+    mainImg: '',
     materials: {
       title:
         'Materials (adapt to patient, clinician, and site-specific factors/availability)',
@@ -609,7 +663,7 @@ const lowerExtDB = [
         Probe: 'Linear probe ',
         Needle:
           '50 mm, 22 G blunt tip needle. Hyperechoic block needle preferred, tubing optional',
-        'Volume of Anesthetic': '5-10 mL',
+        volumeOfAnesthetic: '5-10 mL',
         Other:
           '10 mL syringe; 10 mL sterile saline (for hydrodissection). Skin prep and PPE',
       },
@@ -654,7 +708,7 @@ const lowerExtDB = [
       ],
     },
     pitfall: {
-      title: 'Pearls and Pitfall',
+      title: 'Pearls and Pitfalls',
       content: [
         'The lateral aspect of the foot could be spared and may need additional local anesthetic or an additional block.',
         'When performing the in-plane technique, slide proximal on the leg so needle does not pass through Achilles tendon.',
@@ -695,7 +749,8 @@ const lowerExtDB = [
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/posteriortibial/5.7+Distal+Tibial+US+plain.jpg',
       },
       {
-        caption: 'US anatomy labeled | 1 = Posterior Tibial Nerve | 2 = Posterior Tibial Artery and Vein | 3 = Medial Malleolus',
+        caption:
+          'US anatomy labeled | 1 = Posterior Tibial Nerve | 2 = Posterior Tibial Artery and Vein | 3 = Medial Malleolus',
         url: 'https://advanced-analgesia.s3.amazonaws.com/lowerextremity/posteriortibial/5.7+Distal+Tibial+US+labeled.jpg ',
       },
     ],
