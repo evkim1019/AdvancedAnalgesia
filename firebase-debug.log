@@ -1,0 +1,38 @@
+[debug] [2023-11-14T03:40:10.497Z] ----------------------------------------------------------------------
+[debug] [2023-11-14T03:40:10.498Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-11-14T03:40:10.498Z] CLI Version:   11.9.0
+[debug] [2023-11-14T03:40:10.498Z] Platform:      darwin
+[debug] [2023-11-14T03:40:10.498Z] Node Version:  v16.13.1
+[debug] [2023-11-14T03:40:10.501Z] Time:          Mon Nov 13 2023 22:40:10 GMT-0500 (Eastern Standard Time)
+[debug] [2023-11-14T03:40:10.501Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-14T03:40:10.502Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-11-14T03:40:10.548Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-14T03:40:10.548Z] > authorizing via signed-in user (kimgem89@gmail.com)
+[debug] [2023-11-14T03:40:10.548Z] [iam] checking project advanced-analgesia-85750 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-14T03:40:10.549Z] > refreshing access token with scopes: []
+[debug] [2023-11-14T03:40:10.549Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-14T03:40:10.549Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-14T03:40:10.702Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-11-14T03:40:10.702Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-11-14T03:40:10.730Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-14T03:40:10.730Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-14T03:40:10.744Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-analgesia-85750:testIamPermissions [none]
+[debug] [2023-11-14T03:40:10.744Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-analgesia-85750:testIamPermissions x-goog-quota-user=projects/advanced-analgesia-85750
+[debug] [2023-11-14T03:40:10.744Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-analgesia-85750:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-14T03:40:11.207Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-analgesia-85750:testIamPermissions 200
+[debug] [2023-11-14T03:40:11.207Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/advanced-analgesia-85750:testIamPermissions {}
+[debug] [2023-11-14T03:40:11.207Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project advanced-analgesia-85750:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-11-14T03:40:11.208Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/advanced-analgesia-85750 [none]
+[debug] [2023-11-14T03:40:11.720Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/advanced-analgesia-85750 403
+[debug] [2023-11-14T03:40:11.720Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/advanced-analgesia-85750 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-11-14T03:40:11.721Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-11-14T03:40:11.721Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project advanced-analgesia-85750. Please make sure the project exists and your account has permission to access it.
